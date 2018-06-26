@@ -1,0 +1,161 @@
+<manifest alg="2" build="2018.1.0.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="cct.com" resolutions="1x" timestamp="1530039087802">
+  <folder name="css">
+    <file name="site_global.css" crc="3776177571"/>
+    <file name="master_a-master.css" crc="343750388" ref="our-city:us:research:about:index"/>
+    <file name="our-city.css" crc="188537263" ref="our-city"/>
+    <file name="us.css" crc="3800534966" ref="us"/>
+    <file name="research.css" crc="113212722" ref="research"/>
+    <file name="about.css" crc="463079892" ref="about"/>
+    <file name="index.css" crc="3775244348" ref="index"/>
+  </folder>
+  <folder name="assets">
+    <file name="revision7.pdf" crc="289215711" seo="true" mt="1529937799000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:about:us:research:our-city"/>
+    <file name="museutils.js" crc="340535759" ref="index:about:us:research:our-city"/>
+    <file name="whatinput.js" crc="86476730" ref="index:about:us:research:our-city"/>
+    <file name="museconfig.js" crc="310584261" ref="index:about:us:research:our-city"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4260645839" ref="index:about:us:research"/>
+    <file name="jquery.watch.js" crc="51536988" ref="index:about:us:research:our-city"/>
+    <file name="require.js" crc="7928878" ref="index:about:us:research:our-city"/>
+  </folder>
+  <folder name="images">
+    <file name="smartcity_pic1.png" crc="3846555307" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="u650-6.png" crc="3811881888" ref="index"/>
+    <file name="blank.gif" crc="4208392903" ref="index:about:us:research:our-city"/>
+    <file name="u652.png" crc="270788514" ref="index"/>
+    <file name="u652-r.png" crc="4206662309" ref="index"/>
+    <file name="u2330-6.png" crc="3811881888" ref="index"/>
+    <file name="u2338.png" crc="270788514" ref="index"/>
+    <file name="u2338-r.png" crc="4206662309" ref="index"/>
+    <file name="u647-6.png" crc="386028495" ref="index"/>
+    <file name="car2.png" crc="4022463958" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="u336_states.png" crc="3833023721" ref="index:about:us:research:our-city"/>
+    <file name="u336_states-r.png" crc="4062335730" ref="index:about:us:research:our-city"/>
+    <file name="u336_states-a.png" crc="300923965" ref="index:about:us:research:our-city"/>
+    <file name="u337_states.png" crc="441435447" ref="index:about:us:research:our-city"/>
+    <file name="u337_states-r.png" crc="256453198" ref="index:about:us:research:our-city"/>
+    <file name="u337_states-a.png" crc="4057120251" ref="index:about:us:research:our-city"/>
+    <file name="u338_states.png" crc="3760555061" ref="index:about:us:research:our-city"/>
+    <file name="u338_states-r.png" crc="4034497298" ref="index:about:us:research:our-city"/>
+    <file name="u338_states-a.png" crc="4121588859" ref="index:about:us:research:our-city"/>
+    <file name="u339_states.png" crc="268469164" ref="index:about:us:research:our-city"/>
+    <file name="u339_states-r.png" crc="4053157175" ref="index:about:us:research:our-city"/>
+    <file name="u339_states-a.png" crc="441499358" ref="index:about:us:research:our-city"/>
+    <file name="u340.png" crc="3762027990" ref="index:about:us:research:our-city"/>
+    <file name="u340-r.png" crc="4235619582" ref="index:about:us:research:our-city"/>
+    <file name="u524-7.png" crc="4290027012" ref="index:about:us:research:our-city"/>
+    <file name="800px_colourbox4494883.jpg" crc="457887579" ref="about">
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="u1097-4.png" crc="326475951" ref="about"/>
+    <file name="u1098-4.png" crc="4131579171" ref="about"/>
+    <file name="u1092.png" crc="100753409" ref="about"/>
+    <file name="u1092-r.png" crc="3809715389" ref="about"/>
+    <file name="images.jpg" crc="3849233861" ref="about">
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="u1169-4.png" crc="4194208073" ref="about"/>
+    <file name="u1170-4.png" crc="4131579171" ref="about"/>
+    <file name="u1158.png" crc="4107519303" ref="about"/>
+    <file name="u1158-r.png" crc="3901657352" ref="about"/>
+    <file name="24120713-group-of-chinese-business-people-jumping-in-the-air-isolated-on-a-white-background.jpg" crc="3893324326" ref="about">
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="u1175-4.png" crc="4234293643" ref="about"/>
+    <file name="u1176-4.png" crc="4131579171" ref="about"/>
+    <file name="u1164.png" crc="100753409" ref="about"/>
+    <file name="u1164-r.png" crc="3809715389" ref="about"/>
+    <file name="smartcity_pic1-u938-fr.png" crc="125522303" ref="about:research"/>
+    <file name="u824-4.png" crc="418725727" ref="about"/>
+    <file name="u1040-4.png" crc="360574772" ref="about"/>
+    <file name="u1046-4.png" crc="3982673113" ref="about"/>
+    <file name="u1052-4.png" crc="245437793" ref="about"/>
+    <file name="u825-4.png" crc="529301412" ref="about"/>
+    <file name="u1041-4.png" crc="529301412" ref="about"/>
+    <file name="u1047-4.png" crc="529301412" ref="about"/>
+    <file name="u1053-4.png" crc="529301412" ref="about"/>
+    <file name="u827.png" crc="4020540169" ref="about"/>
+    <file name="u827-r.png" crc="4213361012" ref="about"/>
+    <file name="u2381.png" crc="4020540169" ref="about"/>
+    <file name="u2381-r.png" crc="4213361012" ref="about"/>
+    <file name="u2387.png" crc="4020540169" ref="about"/>
+    <file name="u2387-r.png" crc="4213361012" ref="about"/>
+    <file name="u2393.png" crc="4020540169" ref="about"/>
+    <file name="u2393-r.png" crc="4213361012" ref="about"/>
+    <file name="smartcity_bridge3.png" crc="447258146" ref="about">
+      <caption webpage="about" alt=""/>
+    </file>
+    <file name="nykim.jpg" crc="51373402" ref="us">
+      <caption webpage="us" alt=""/>
+    </file>
+    <file name="u1522-16.png" crc="333706872" ref="us"/>
+    <file name="u1628-16.png" crc="333706872" ref="us"/>
+    <file name="ostrenko_derick-e1402603016988-150x150.jpg" crc="502462979" ref="us">
+      <caption webpage="us" alt=""/>
+    </file>
+    <file name="u1525-16.png" crc="333706872" ref="us"/>
+    <file name="u1629-16.png" crc="333706872" ref="us"/>
+    <file name="nam_hyeyeon_2015-e1452888397479-150x150.jpg" crc="4043381681" ref="us">
+      <caption webpage="us" alt=""/>
+    </file>
+    <file name="u1528-16.png" crc="333706872" ref="us"/>
+    <file name="u1630-16.png" crc="333706872" ref="us"/>
+    <file name="ostrenko_derick-2.jpg" crc="243891844" ref="us">
+      <caption webpage="us" alt=""/>
+    </file>
+    <file name="u1531-16.png" crc="333706872" ref="us"/>
+    <file name="u1631-16.png" crc="333706872" ref="us"/>
+    <file name="u1431-5.png" crc="4194574689" ref="us"/>
+    <file name="u1623-5.png" crc="343270667" ref="us"/>
+    <file name="u2408-4.png" crc="418725727" ref="research"/>
+    <file name="u2414-4.png" crc="360574772" ref="research"/>
+    <file name="u2416-4.png" crc="3982673113" ref="research"/>
+    <file name="u2418-4.png" crc="245437793" ref="research"/>
+    <file name="u2409-4.png" crc="529301412" ref="research"/>
+    <file name="u2415-4.png" crc="529301412" ref="research"/>
+    <file name="u2417-4.png" crc="529301412" ref="research"/>
+    <file name="u2419-4.png" crc="529301412" ref="research"/>
+    <file name="u2411.png" crc="4020540169" ref="research"/>
+    <file name="u2411-r.png" crc="4213361012" ref="research"/>
+    <file name="u2424.png" crc="4020540169" ref="research"/>
+    <file name="u2424-r.png" crc="4213361012" ref="research"/>
+    <file name="u2426.png" crc="4020540169" ref="research"/>
+    <file name="u2426-r.png" crc="4213361012" ref="research"/>
+    <file name="u2428.png" crc="4020540169" ref="research"/>
+    <file name="u2428-r.png" crc="4213361012" ref="research"/>
+    <file name="download.jpg" crc="3813582872" ref="research:our-city">
+      <caption webpage="research" alt=""/>
+      <caption webpage="our-city" alt=""/>
+    </file>
+    <file name="u2288.png" crc="3974669953" ref="research"/>
+    <file name="u2288-r.png" crc="4032225654" ref="research"/>
+    <file name="u2290.png" crc="336855473" ref="research"/>
+    <file name="u2290-r.png" crc="4032258885" ref="research"/>
+    <file name="u2286-5.png" crc="309936594" ref="research"/>
+    <file name="u2206.png" crc="3974669953" ref="our-city"/>
+    <file name="u2206-r.png" crc="4032225654" ref="our-city"/>
+    <file name="u2208.png" crc="336855473" ref="our-city"/>
+    <file name="u2208-r.png" crc="4032258885" ref="our-city"/>
+    <file name="u2136-5.png" crc="4033788506" ref="our-city"/>
+    <file name="use-cases-geospatial-desktop-1600-ca89a357ee2d543f3336692ac0c644e7.jpg" crc="320929505" ref="our-city">
+      <caption webpage="our-city" alt=""/>
+    </file>
+    <file name="u2156.png" crc="3974669953" ref="our-city"/>
+    <file name="u2156-r.png" crc="4032225654" ref="our-city"/>
+    <file name="u2158.png" crc="336855473" ref="our-city"/>
+    <file name="u2158-r.png" crc="4032258885" ref="our-city"/>
+    <file name="u2154-5.png" crc="4033788506" ref="our-city"/>
+  </folder>
+  <file name="index.html" crc="296383230" seo="true" mt="1530038982721" redirect="true"/>
+  <file name="about.html" crc="3996379333" seo="true" mt="1530038982721" redirect="true"/>
+  <file name="us.html" crc="516441592" seo="true" mt="1530038982721" redirect="true"/>
+  <file name="research.html" crc="3853440484" seo="true" mt="1530038982721" redirect="true"/>
+  <file name="our-city.html" crc="146331872" seo="true" mt="1530038982721" redirect="true"/>
+</manifest>
