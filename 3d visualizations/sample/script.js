@@ -2,6 +2,15 @@
 // BASIC SETUP
 // ------------------------------------------------
 
+//responsive render
+window.onresize = function(){
+	console.log("Window size: "+window.innerWidth+"x"+window.innerHeight+"px");
+	renderer.setSize(window.innerWidth,window.innerHeight);
+	var aspectRatio = window.innerWidth/window.innerHeight;
+	camera.aspect = aspectRatio;
+	camera.updateProjectionMatrix();
+}
+
 // Add stats bar
 var stats = new Stats();
 stats.showPanel( 0 );
@@ -24,6 +33,9 @@ renderer.setClearColor("#000111");
 
 // Configure renderer size
 renderer.setSize( window.innerWidth, window.innerHeight );
+
+//orbit controls
+var oControls = new THREE.OrbitControls( camera, renderer.domElement );
 
 // Append Renderer to DOM
 document.body.appendChild( renderer.domElement );
@@ -75,31 +87,31 @@ scene.add( cube );
 */
 
 // Add control
-var controls = {
+var guiControls = {
   size:1,
   color: 0x2A9494
 }
 
 var gui = new dat.GUI();
-var c_mesh_size = gui.add(controls, 'size', 0,2);
-var c_mesh_color = gui.addColor(controls, 'color', 0,100);
+var c_mesh_size = gui.add(guiControls, 'size', 0,2);
+var c_mesh_color = gui.addColor(guiControls, 'color', 0,100);
 
-var geometry = new THREE.SphereGeometry(controls.size, Math.floor(controls.size * 16), Math.floor(controls.size * 16));
+var geometry = new THREE.SphereGeometry(guiControls.size, Math.floor(guiControls.size * 16), Math.floor(guiControls.size * 16));
 geometry.computeFaceNormals();
 geometry.computeVertexNormals();
-var material = new THREE.MeshLambertMaterial( { color: controls.color } );
+var material = new THREE.MeshLambertMaterial( { color: guiControls.color } );
 var mesh = new THREE.Mesh( geometry, material );
 scene.add( mesh );
 
 c_mesh_size.onChange(function(){
-  geometry = new THREE.SphereGeometry(controls.size, Math.floor(controls.size * 16), Math.floor(controls.size * 16));
+  geometry = new THREE.SphereGeometry(guiControls.size, Math.floor(guiControls.size * 16), Math.floor(guiControls.size * 16));
   geometry.computeFaceNormals();
   geometry.computeVertexNormals();
   mesh.geometry = geometry;
 });
 
 c_mesh_color.onChange(function(){
-  mesh.material.color.setHex(controls.color);
+  mesh.material.color.setHex(guiControls.color);
 });
 
 /*
