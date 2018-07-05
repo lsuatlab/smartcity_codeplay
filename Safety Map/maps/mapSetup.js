@@ -42,26 +42,26 @@ function initmap() {
   info.addTo(map);
 
 
-
+var ColorSet = ['#420268','#5d0062','#73005d','#890057','#9f0151','#b4064a','#c80d44','#dc143c'];
 // get color depending on population density value
   function getColor(d) {
-    return d > 300 ? '#800026' :
-        d > 200  ? '#BD0026' :
-        d > 100  ? '#E31A1C' :
-        d > 70  ? '#FC4E2A' :
-        d > 50   ? '#FD8D3C' :
-        d > 30   ? '#FEB24C' :
-        d > 15   ? '#FED976' :
-              '#FFEDA0';
+    return d > 300 ? ColorSet[0] :
+        d > 200  ? ColorSet[1] :
+        d > 100  ? ColorSet[2] :
+        d > 70  ? ColorSet[3] :
+        d > 50   ? ColorSet[4] :
+        d > 30   ? ColorSet[5] :
+        d > 15   ? ColorSet[6] :
+              ColorSet[7];
   }
 
   function style(feature) {
     return {
-      weight: 2,
-      opacity: 1,
-      color: 'white',
-      dashArray: '3',
-      fillOpacity: 0.7,
+      weight: 1,
+      opacity: 0.5,
+      color: '#B7E0E5',
+      dashArray: '1',
+      fillOpacity: 1,
       fillColor: getColor(feature.properties.CRIME_INDEX.TOTAL)
     };
   }
