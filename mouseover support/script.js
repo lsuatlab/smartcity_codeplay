@@ -1,142 +1,164 @@
-			var camera, scene, raycaster, renderer, stats;
-			var mouse = new THREE.Vector2(), INTERSECTED;;
-			var oControls;
-			var text2;
+init();
+animate();
 
-			init();
-			animate();
+var stats, controls, raycaster;
+var scene, camera, renderer;
+var mouse = new THREE.Vector2(), INTERSECTED, label;
 
-			function init() {
+function init () {
+ 
+ 		stats = new Stats();
+		stats.showPanel( 0 );
+		document.body.appendChild( stats.dom );
+    // Scene
+    scene = new THREE.Scene();
+    scene.background = new THREE.Color(0xf0f0f0);
+ 
+    // Camera
+    camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 1, 5000 );
+    camera.position.set(20, 20, 20);
+    camera.lookAt(0, 0, 0);
+ 
+    // Orbit Controls
+    controls = new THREE.OrbitControls(camera);
+    //controls.enableDamping = true;
+		//controls.dampingFactor = 0;
+ 
+    // Render
+    renderer = new THREE.WebGLRenderer();
+    renderer.setPixelRatio( window.devicePixelRatio );
+    renderer.setSize(window.innerWidth, window.innerHeight );
+    document.getElementById('demo').appendChild(renderer.domElement);
 
-			  camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 1, 5000 );
+    // Raycaster
+    raycaster = new THREE.Raycaster();
 
-			  scene = new THREE.Scene();
-			  scene.background = new THREE.Color( 0xf0f0f0 );
+    // Events
+    window.addEventListener('resize', onWindowResize, false);
+    document.addEventListener( 'keydown', onDocumentKeyDown, false );
+    document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+    document.addEventListener( 'mousedown', onDocumentMouseClick, false );
+ 
+};
 
-			  var light = new THREE.DirectionalLight( 0xffffff, 1 );
-				light.position.set( 1, 1, 1 ).normalize();
-				scene.add( light );
+function onWindowResize() {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  controls.reset();
+}
 
-			  //test code
-			  raycaster = new THREE.Raycaster();
-			  renderer = new THREE.WebGLRenderer();
-				renderer.setPixelRatio( window.devicePixelRatio );
-				renderer.setSize( window.innerWidth, window.innerHeight );
-			  document.getElementById('container').appendChild(renderer.domElement);
+function onDocumentKeyDown( event ) {
+	var geometry = new THREE.CircleGeometry( Math.random() * 20, 32 );
+	var material = new THREE.MeshBasicMaterial( {color: Math.random() * 0xffffff} );
+	var sphere = new THREE.Mesh( geometry, material );
+  sphere.position.x = camera.position.x + Math.random() * 120 -60;
+  sphere.position.y = camera.position.y + Math.random() * 120 -60;
+  sphere.position.z = camera.position.z -50;
+  scene.add(sphere);
+}
 
-			  //stats, dont work 
-			  stats = new Stats();
+function onDocumentMouseMove( event ) {
+	mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+	mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
+}
 
-			  //orbit controls, dont work 
-				oControls = new THREE.OrbitControls( camera, renderer.domElement );
+function onDocumentMouseClick( event ) {
+	// find intersections
+	camera.lookAt( scene.position );
+	camera.updateMatrixWorld();
 
-			  window.addEventListener('resize', onWindowResize, false);
-			  document.addEventListener( 'mousemove', onDocumentMouseMove, false );
-			  document.addEventListener( 'mousedown', onDocumentMouseClick, false );
-			  document.addEventListener( 'keydown', onDocumentKeyDown, false );
-			  text2 = document.createElement('div' );
-						text2.setAttribute("id", "nametag");
-						text2.style.position = 'absolute';
-						//text2.style.zIndex = 1;    // if you still don't see the label, try uncommenting this
-						text2.style.width = 100;
-						text2.style.height = 35;
-						text2.style.backgroundColor = "black";
-						text2.style.color = "white"
-						text2.innerHTML = "Hit any button to continue";
-						text2.style.top = 100 + 'px';
-						text2.style.left = 100 + 'px';
-						document.body.appendChild(text2);
-
+	raycaster.setFromCamera( mouse, camera );
+	var intersects = raycaster.intersectObjects( scene.children );
+	if ( intersects.length > 0 ) {
+		if ( INTERSECTED != intersects[ intersects.length -1 ].object ) {
+			if ( INTERSECTED ) {
+				INTERSECTED.material.color.setHex( INTERSECTED.currentHex );
+				scene.remove(scene.getObjectByName("spritey"));
 			}
+			INTERSECTED = intersects[ 0 ].object;
+			INTERSECTED.currentHex = INTERSECTED.material.color.getHex();
+			INTERSECTED.material.color.setHex( 0xff0000 );
 
-			function onWindowResize() {
-			  camera.aspect = window.innerWidth / window.innerHeight;
-			  camera.updateProjectionMatrix();
-			  renderer.setSize(window.innerWidth, window.innerHeight);
-			  oControls.reset();
+			var spritey = makeTextSprite( " It Works ", 
+				{ fontsize: 32, fontface: "Georgia", borderColor: {r:0, g:0, b:0, a:1.0} } );
+					spritey.position.set(INTERSECTED.position.x, INTERSECTED.position.y, INTERSECTED.position.z + 3);
+			spritey.name = "spritey";
+			scene.add( spritey );
+		}
+	} else {
+		if ( INTERSECTED ) {
+			INTERSECTED.material.color.setHex( INTERSECTED.currentHex );
+			scene.remove(scene.getObjectByName("spritey"));
+		}
+		INTERSECTED = null;
+	}
+}
 
-			}
+//Weird function used to make sprites out of text. Thank you github user mcode
+//slightly modified to removed older parameters that aren't used anymore
 
-			function onDocumentMouseMove( event ) {
-				mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
-				mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
-			}
+function makeTextSprite( message, parameters )
+{
+  if ( parameters === undefined ) parameters = {};
+  var fontface = parameters.hasOwnProperty("fontface") ? parameters["fontface"] : "Arial";
+  var fontsize = parameters.hasOwnProperty("fontsize") ? parameters["fontsize"] : 18;
+  var borderThickness = parameters.hasOwnProperty("borderThickness") ? parameters["borderThickness"] : 4;
+  var borderColor = parameters.hasOwnProperty("borderColor") ?parameters["borderColor"] : { r:0, g:0, b:0, a:1.0 };
+  var backgroundColor = parameters.hasOwnProperty("backgroundColor") ?parameters["backgroundColor"] : { r:255, g:255, b:255, a:1.0 };
+  var textColor = parameters.hasOwnProperty("textColor") ?parameters["textColor"] : { r:0, g:0, b:0, a:1.0 };
 
-			function onDocumentMouseClick( event ) {
-				// find intersections
-				if(!!document.getElementById("nametag"))
-				{
-					document.body.removeChild(document.getElementById("nametag"));
-				}
-				camera.lookAt( scene.position );
-				camera.updateMatrixWorld();
-				oControls.reset();
+  var canvas = document.createElement('canvas');
+  var context = canvas.getContext('2d');
+  context.font = "Bold " + fontsize + "px " + fontface;
+  var metrics = context.measureText( message );
+  var textWidth = metrics.width;
 
-				raycaster.setFromCamera( mouse, camera );
-				var intersects = raycaster.intersectObjects( scene.children );
-				if ( intersects.length > 0 ) {
-					if ( INTERSECTED != intersects[ intersects.length -1 ].object ) {
-						if ( INTERSECTED ) {
-							INTERSECTED.material.color.setHex( INTERSECTED.currentHex );
-						}
-						INTERSECTED = intersects[ intersects.length -1 ].object;
-						INTERSECTED.currentHex = INTERSECTED.material.color.getHex();
-						INTERSECTED.material.color.setHex( 0xff0000 );
+  context.fillStyle   = "rgba(" + backgroundColor.r + "," + backgroundColor.g + "," + backgroundColor.b + "," + backgroundColor.a + ")";
+  context.strokeStyle = "rgba(" + borderColor.r + "," + borderColor.g + "," + borderColor.b + "," + borderColor.a + ")";
 
-						var temp = deteremineScreenCoordinate(INTERSECTED);
+  context.lineWidth = borderThickness;
+  roundRect(context, borderThickness/2, borderThickness/2, (textWidth + borderThickness) * 1.1, fontsize * 1.4 + borderThickness, 8);
 
-						text2 = document.createElement('div' );
-						text2.setAttribute("id", "nametag");
-						text2.style.position = 'absolute';
-						//text2.style.zIndex = 1;    // if you still don't see the label, try uncommenting this
-						text2.style.width = 100;
-						text2.style.height = 35;
-						text2.style.backgroundColor = "black";
-						text2.style.color = "white"
-						text2.innerHTML = "I wish I had brain cells";
-						text2.style.top = temp.x + 'px';
-						text2.style.left = temp.y + 'px';
-						document.body.appendChild(text2);
-					}
-				} else {
-					if ( INTERSECTED ) {
-						INTERSECTED.material.color.setHex( INTERSECTED.currentHex );
-					}
-					INTERSECTED = null;
-				}
-			}
+  context.fillStyle = "rgba("+textColor.r+", "+textColor.g+", "+textColor.b+", 1.0)";
+  context.fillText( message, borderThickness, fontsize + borderThickness);
 
-			//function from three.js cookbook github
-			//If I assume this works then my camera is really messed up
-			function deteremineScreenCoordinate(object) {
-        var vector = new THREE.Vector3();
-        vector.setFromMatrixPosition(object.matrixWorld);
-        vector.project(camera);
-        var width = window.innerWidth, height = window.innerHeight;
-        var widthHalf = width / 2, heightHalf = height / 2;
-        vector.x = ( vector.x * widthHalf ) + widthHalf;
-        vector.y = -( vector.y * heightHalf ) + heightHalf;
-        return vector;
-    	}
+  var texture = new THREE.Texture(canvas) 
+  texture.needsUpdate = true;
 
-			function onDocumentKeyDown( event ) {
-				var geometry = new THREE.CircleGeometry( Math.random() * 20, 32 );
-				var material = new THREE.MeshBasicMaterial( {color: Math.random() * 0xffffff} );
-				var sphere = new THREE.Mesh( geometry, material );
-			  sphere.position.x = camera.position.x + Math.random() * 120 -60;
-			  sphere.position.y = camera.position.y + Math.random() * 120 -60;
-			  sphere.position.z = camera.position.z -50;
-			  scene.add(sphere);
-			  if(scene.children.length == 2)
-			  {
-			  	prevObj = scene.children[1];
-			  	console.log(prevObj);
-			  	prevColor = prevObj.material.color.getHex();
-			  }
-			}
+  var spriteMaterial = new THREE.SpriteMaterial( { map: texture } );
+  var sprite = new THREE.Sprite( spriteMaterial );
+  sprite.scale.set(0.5 * fontsize, 0.25 * fontsize, 0.75 * fontsize);
+  return sprite;  
+}
 
-			function animate() {
-				stats.update();
-			  requestAnimationFrame(animate);
-				renderer.render(scene, camera);
-			}
+// function for drawing rounded rectangles
+function roundRect(ctx, x, y, w, h, r) 
+{
+    ctx.beginPath();
+    ctx.moveTo(x+r, y);
+    ctx.lineTo(x+w-r, y);
+    ctx.quadraticCurveTo(x+w, y, x+w, y+r);
+    ctx.lineTo(x+w, y+h-r);
+    ctx.quadraticCurveTo(x+w, y+h, x+w-r, y+h);
+    ctx.lineTo(x+r, y+h);
+    ctx.quadraticCurveTo(x, y+h, x, y+h-r);
+    ctx.lineTo(x, y+r);
+    ctx.quadraticCurveTo(x, y, x+r, y);
+    ctx.closePath();
+    ctx.fill();
+	ctx.stroke();   
+}
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+function animate() {
+	stats.begin();
+
+  requestAnimationFrame(animate);
+  controls.update();
+  renderer.render(scene, camera);
+  stats.end();
+
+};

@@ -1,50 +1,19 @@
-<head>
-		<meta charset="utf-8">
+<html>
+    <head>
+    	<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-		<title>That's my roomate</title>
+        <title>mouseover test</title>
 
-		<!--CSS stuff here -->
-		<style>
-    	html, body {
-				height: 100%;
-			}
-
-			body {
-				background-color: #ffffff;
-				margin: 0;
-				font-family: Arial;
-				overflow: hidden;
-			}
-
-			a {
-				color: #0000ff;
-			}
-
-			#info {
-				position: absolute;
-				width: 100%;
-				color: #000000;
-				padding: 5px;
-				font-family: Monospace;
-				font-size: 13px;
-				font-weight: bold;
-				text-align: center;
-				z-index: 1;
-			}
-  	</style>
-
-  	<!-- components -->
-  	<script src="tools/three.min.js"></script>
-    <script src="tools/stats.min.js"></script>
-    <script src="tools/dat.gui.min.js"></script>
-    <script src="tools/orbitControls.js"></script>
-    <script src="tools/CSS3DRenderer.js"></script>
-    <script src="tools/tween.js"></script>
-	</head>
-	<body>
-
-		<div id="container"></div>
-
-		<!-- Scripts -->
-		<script src="script.js"></script>
-	</body>
+    </head>
+    <body>
+        <div id="demo"></div>
+ 
+        <!-- Three.js, and orbit controls -->
+        <script src="tools/three.min.js" ></script>
+        <script src="tools/orbitControls.js" ></script>
+        <script src="tools/stats.min.js" ></script>
+ 
+        <script src="script.js"></script>
+ 
+    </body>
+</html>
