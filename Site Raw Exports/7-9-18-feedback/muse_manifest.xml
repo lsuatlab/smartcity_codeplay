@@ -1,10 +1,10 @@
-<manifest alg="2" build="2018.1.0.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="http://smartcity.lsu.edu" resolutions="1x" timestamp="1531142788833">
+<manifest alg="2" build="2018.1.0.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="http://smartcity.lsu.edu" resolutions="1x" timestamp="1531168183208">
   <folder name="css">
     <file name="site_global.css" crc="4073380708"/>
-    <file name="master_a-master.css" crc="498767775" ref="index"/>
+    <file name="master_a-master.css" crc="3939927435" ref="index"/>
     <file name="nomq_preview_master_a-master.css" crc="3824530138" ref="index"/>
-    <file name="index.css" crc="36995788" ref="index"/>
-    <file name="nomq_index.css" crc="4148932929" ref="index"/>
+    <file name="index.css" crc="230980858" ref="index"/>
+    <file name="nomq_index.css" crc="4187748642" ref="index"/>
   </folder>
   <folder name="assets">
     <file name="revision7.pdf" crc="289215711" seo="true" mt="1529937799000"/>
@@ -37,14 +37,15 @@
     <file name="u13418_states.png" crc="3775250016" ref="index"/>
     <file name="u13418_states-r.png" crc="3832587278" ref="index"/>
     <file name="u13418_states-a.png" crc="478219394" ref="index"/>
-    <file name="u7573_states.png" crc="3909478970" ref="index"/>
-    <file name="u7573_states-r.png" crc="198609986" ref="index"/>
-    <file name="u7573_states-a.png" crc="4108858624" ref="index"/>
+    <file name="u7573_states.png" crc="6582808" ref="index"/>
+    <file name="u7573_states-r.png" crc="3904796915" ref="index"/>
+    <file name="u7573_states-a.png" crc="200980143" ref="index"/>
     <file name="u7570_states.png" crc="3841743415" ref="index"/>
     <file name="u7570_states-r.png" crc="190063644" ref="index"/>
     <file name="u7570_states-a.png" crc="190063644" ref="index"/>
-    <file name="u13272.png" crc="124628474" ref="index"/>
-    <file name="u13272-r.png" crc="3764752133" ref="index"/>
+    <file name="u13272_states.png" crc="205445098" ref="index"/>
+    <file name="u13272_states-r.png" crc="4128373181" ref="index"/>
+    <file name="u13272_states-a.png" crc="4075930501" ref="index"/>
     <file name="u8870_states.png" crc="4215113504" ref="index"/>
     <file name="u8870_states-r.png" crc="4283655080" ref="index"/>
     <file name="u8870_states-a.png" crc="3905884622" ref="index"/>
@@ -179,7 +180,7 @@
     <file name="u10758-r.png" crc="481067882" ref="index"/>
     <file name="u10759.png" crc="393626833" ref="index"/>
     <file name="u10759-r.png" crc="300865992" ref="index"/>
-    <file name="u10754.png" crc="268409010" ref="index"/>
+    <file name="u10754.png" crc="3951930149" ref="index"/>
     <file name="u10754-r.png" crc="4133519589" ref="index"/>
     <file name="u10754-m.png" crc="4133519589" ref="index"/>
     <file name="u10754-a.png" crc="195610719" ref="index"/>
@@ -457,5 +458,5 @@
     <file name="u19420-44.png" crc="3922832177" ref="index"/>
     <file name="u7359-44.png" crc="296237608" ref="index"/>
   </folder>
-  <file name="index.html" crc="386029955" seo="true" mt="1531142776683" redirect="true"/>
+  <file name="index.html" crc="472464732" seo="true" mt="1531168163600" redirect="true"/>
 </manifest>
