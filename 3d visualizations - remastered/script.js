@@ -73,6 +73,7 @@ function init() {
       object.position.x = Math.random() * 4000 - 2000,
       object.position.y = Math.random() * 4000 - 2000,
       object.position.z = Math.random() * 4000 - 2000;
+      object.name = "object " + i;
       object.scale.set(100,100,1);
       //object.position.x = object.position.y = object.position.z = 0
       scene.add(object);
@@ -91,8 +92,8 @@ function init() {
   //sphere pattern here
   var radius = particlesTotal * 5;
   for (var i = 0; i < particlesTotal; i++) {
-    var phi = Math.acos(-1 + (2 * i) / particlesTotal);
-    var theta = Math.sqrt(particlesTotal /2 * Math.PI) * phi;
+    var phi = Math.acos(-1 + (2 * i) / (1 * particlesTotal));
+    var theta = Math.sqrt(1 * particlesTotal * Math.PI) * phi;
     positions.push(
       radius * Math.cos(theta) * Math.sin(phi),
       radius * Math.sin(theta) * Math.sin(phi),

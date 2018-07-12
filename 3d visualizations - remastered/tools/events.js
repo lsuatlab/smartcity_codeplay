@@ -42,7 +42,7 @@ function onDocumentMouseClick( event ) {
 			INTERSECTED.currentHex = INTERSECTED.material.color.getHex();
 			INTERSECTED.material.color.setHex( 0xff0000 );
 
-			var spritey = makeTextSprite( " It Work but ", 
+			var spritey = makeTextSprite( " " + INTERSECTED.name + " ", 
 				{ fontsize: 30, fontface: "Georgia", borderColor: {r:0, g:0, b:0, a:1.0} } );
 			//spritey.position.set(INTERSECTED.position.x, INTERSECTED.position.y, INTERSECTED.position.z + 5);
       spritey.name = "spritey";
