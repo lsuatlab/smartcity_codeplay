@@ -1,4 +1,4 @@
-var camera, scene, renderer;
+var camera, cameraOrtho, scene, sceneOrtho, renderer;
 var controls, stats, raycaster, oControls;
 var mouse = new THREE.Vector2(), INTERSECTED, label;
 
@@ -21,14 +21,32 @@ function init() {
 
 	//scene
 	scene = new THREE.Scene();
+	sceneOrtho = new THREE.Scene();
 
   //camera
   camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 50000);
   camera.position.set(0, 0, 30 * particlesTotal );
   camera.lookAt(scene.position);
 
+  cameraOrtho = new THREE.OrthographicCamera(75, window.innerWidth / window.innerHeight, 1, 50000);
+  cameraOrtho.position.set(0, 0, 10 );
+  cameraOrtho.lookAt(scene.position);
+
+  //quick fix cuz im lazy. 
+  //cameraOrtho isn't created properly but its late and this is my quick fix
+  //until I have enough brain cells to do geometry again
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+
+  cameraOrtho.left = - window.innerWidth / 2;
+  cameraOrtho.right = window.innerWidth / 2;
+  cameraOrtho.top = window.innerHeight / 2;
+  cameraOrtho.bottom = - window.innerHeight / 2;
+  cameraOrtho.updateProjectionMatrix();
+
   //render
   renderer = new THREE.WebGLRenderer();
+  renderer.autoClear = false; 
   renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.domElement.style.position = 'absolute';
   document.getElementById('container').appendChild(renderer.domElement);
@@ -131,6 +149,9 @@ function animate() {
   */
   
 
-  renderer.render(scene, camera);
+  renderer.clear();
+	renderer.render( scene, camera );
+	renderer.clearDepth();
+	renderer.render( sceneOrtho, cameraOrtho );
 
 }
