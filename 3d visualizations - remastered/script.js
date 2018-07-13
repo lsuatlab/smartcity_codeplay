@@ -36,10 +36,12 @@ animate();
 
 function init() {
 
-	//stats
+	//stats for debug purposes
+	/*
 	stats = new Stats();
 	stats.showPanel( 0 );
 	document.body.appendChild( stats.dom );
+	*/
 
 	//scene
 	scene = new THREE.Scene();
@@ -48,13 +50,7 @@ function init() {
 	//makes sprites
   var image = document.createElement('img');
   var object;
-  /*
-  crimeData.features.forEach(function(data) {
-		console.log(Object.keys(data.properties.CRIME_INDEX));
-	})
-	*/
 
-	//console.log(crimeData)
   image.addEventListener('load', function(event) {
 
   	crimeData.features.forEach(function(data) {
@@ -64,10 +60,11 @@ function init() {
 			for(var i = 1; i < listOfKeys.length; i++)
 			{
 				console.log(listOfKeys[i]);
-				//console.log(data.properties.CRIME_INDEX[listOfKeys[i]]);
 				for(var j = 0; j < data.properties.CRIME_INDEX[listOfKeys[i]]; j++)
 				{
-					object = new createSprite('Remember to change the createSprite method', colors[listOfKeys[i]]);
+					object = new createSprite(
+							'https://upload.wikimedia.org/wikipedia/commons/0/00/WX_circle_white.png', 
+							colors[listOfKeys[i]]);
 		      object.position.x = Math.random() * 4000 - 2000,
 		      object.position.y = Math.random() * 4000 - 2000,
 		      object.position.z = Math.random() * 4000 - 2000;
@@ -93,12 +90,6 @@ function init() {
   cameraOrtho = new THREE.OrthographicCamera(75, window.innerWidth / window.innerHeight, 1, 50000);
   cameraOrtho.position.set(0, 0, 10 );
   cameraOrtho.lookAt(scene.position);
-
-  //quick fix cuz im lazy. 
-  //cameraOrtho isn't created properly but its late and this is my quick fix
-  //until I have enough brain cells to do geometry again
-  camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();
 
   cameraOrtho.left = - window.innerWidth / 2;
   cameraOrtho.right = window.innerWidth / 2;
