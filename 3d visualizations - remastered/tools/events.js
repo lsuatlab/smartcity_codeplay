@@ -79,7 +79,7 @@ function makeTextSprite( message, parameters )
   roundRect(context, borderThickness/2, borderThickness/2, (textWidth + borderThickness), fontsize * 1.4 + borderThickness, 6);
 
   context.fillStyle = "rgba("+textColor.r+", "+textColor.g+", "+textColor.b+", 1.0)";
-  context.fillText( message, borderThickness, fontsize + borderThickness);
+  context.fillText( message, 0, fontsize + borderThickness, 300);
 
   var texture = new THREE.Texture(canvas) 
   texture.needsUpdate = true;
@@ -118,14 +118,14 @@ var getTexture = function (filename) {
   //loader.crossOrigin = null;
   //var texture = loader.load( 'images/' + filename );
   var texture = loader.load( 
-    'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Circle_Fulvous_Solid.svg/200px-Circle_Fulvous_Solid.svg.png');
+    'https://upload.wikimedia.org/wikipedia/commons/0/00/WX_circle_white.png');
   return texture;
 };
 
-function createSprite(filename) {
+function createSprite(filename, color) {
             var spriteMaterial = new THREE.SpriteMaterial({
                         //opacity: opacity,
-                        color: 0xffffff,
+                        color: color,
                         //transparent: transparent,
                         map: getTexture(filename)
                     });
