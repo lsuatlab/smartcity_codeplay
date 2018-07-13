@@ -51,6 +51,11 @@ function init() {
   var image = document.createElement('img');
   var object;
 
+  //remove this in later builds, adds flair by randomizing colors for crimes
+  Object.keys(colors).forEach(function(key) {
+  	colors[key] = Math.random() * 0xffffff;
+  })
+
   image.addEventListener('load', function(event) {
 
   	crimeData.features.forEach(function(data) {
