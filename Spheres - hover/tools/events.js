@@ -22,33 +22,7 @@ function onWindowResize() {
 
 function onDocumentMouseMove( event ) {
 	mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
-	mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
-}
-
-function onDocumentMouseClick( event ) {
-	// find intersections
-	camera.lookAt( scene.position );
-	camera.updateMatrixWorld();
-
-	raycaster.setFromCamera( mouse, camera );
-	var intersects = raycaster.intersectObjects( scene.children );
-	if ( intersects.length > 0 ) {
-    if ( INTERSECTED ) {
-        INTERSECTED.material.color.setHex( INTERSECTED.currentHex );
-    }
-    sceneOrtho.remove(sceneOrtho.getObjectByName("spritey"));
-		if ( INTERSECTED != intersects[ 0 ].object ) {
-			INTERSECTED = intersects[ 0 ].object;
-			INTERSECTED.currentHex = INTERSECTED.material.color.getHex();
-			INTERSECTED.material.color.setHex( 0xff0000 );
-
-			var spritey = makeTextSprite( " " + INTERSECTED.name + " ", 
-				{ fontsize: 30, fontface: "Georgia", borderColor: {r:0, g:0, b:0, a:1.0} } );
-      spritey.name = "spritey";
-      spritey.position.set(window.innerWidth/2, -window.innerHeight/2, 1);
-			sceneOrtho.add( spritey );
-		}
-	} 
+	mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1; 
 }
 
 //Weird function used to make sprites out of text. Thank you github user mcode
