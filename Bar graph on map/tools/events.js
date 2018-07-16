@@ -20,51 +20,72 @@ function onWindowResize() {
   renderer.setSize( window.innerWidth, window.innerHeight );
 }
 
-function onDocumentKeyDown( event ) {
-  raycaster.setFromCamera( mouse, camera );
-  var intersects = raycaster.intersectObjects( objects );
-  if ( intersects.length > 0 ) {
-    var temp = intersects[ 0 ].point;
-    console.log("[" + temp.x + ", " + temp.y + ", " + temp.z + "]")
-  }
-  else {
-    console.log("no object detected");
-  }
-  console.log("-----------------------------------\n");
-}
-
-function onDocumentMouseMove( event ) {	       
-  sceneOrtho.remove(sceneOrtho.getObjectByName("spriteyX"));
-  sceneOrtho.remove(sceneOrtho.getObjectByName("spriteyY"));
-  sceneOrtho.remove(sceneOrtho.getObjectByName("spriteyZ"));
+function onDocumentMouseMove( event ) {
+	       
+  //sceneOrtho.remove(sceneOrtho.getObjectByName("spritey"));
   mouse.x = ( event.clientX / renderer.domElement.clientWidth ) * 2 - 1;
   mouse.y = - ( event.clientY / renderer.domElement.clientHeight ) * 2 + 1;
-  raycaster.setFromCamera( mouse, camera );
-  var intersects = raycaster.intersectObjects( objects );
-  if ( intersects.length > 0 ) {
-    sphere.position.copy( intersects[ 0 ].point );
-    scene.add( sphere );
+  
+  // find intersections
 
-    var spritey = makeTextSprite( "X: " + intersects[ 0 ].point.x + " ", 
-      { fontsize: 30, fontface: "Georgia", borderColor: {r:0, g:0, b:0, a:1.0} } );
-    spritey.name = "spriteyX";
-    spritey.position.set(window.innerWidth/2, -window.innerHeight/2, 1);
-    sceneOrtho.add( spritey );
+  // create a Ray with origin at the mouse position
+  //   and direction into the scene (camera direction)
+  var vector = new THREE.Vector3(mouse.x, mouse.y, 1);
+  vector.unproject(camera);
+  var ray = new THREE.Raycaster(camera.position, vector.sub(camera.position).normalize());
 
-    spritey = makeTextSprite( "Y: " + intersects[ 0 ].point.y + " ", 
-      { fontsize: 30, fontface: "Georgia", borderColor: {r:0, g:0, b:0, a:1.0} } );
-    spritey.name = "spriteyY";
-    spritey.position.set(window.innerWidth/2, -window.innerHeight/2 -50, 1);
-    sceneOrtho.add( spritey );
+  // create an array containing all objects in the scene with which the ray intersects
+  var intersects = ray.intersectObjects(objects.slice(1, objects.length));
 
-    spritey = makeTextSprite( "Z: " + intersects[ 0 ].point.z + " ", 
-      { fontsize: 30, fontface: "Georgia", borderColor: {r:0, g:0, b:0, a:1.0} } );
-    spritey.name = "spriteyZ";
-    spritey.position.set(window.innerWidth/2, -window.innerHeight/2 -100, 1);
-    sceneOrtho.add( spritey );
-  }
-  else {
-    scene.remove(scene.getObjectByName("location"));
+  // INTERSECTED = the object in the scene currently closest to the camera 
+  //    and intersected by the Ray projected from the mouse position  
+
+  // if there is one (or more) intersections
+  if (intersects.length > 0) {
+    // if the closest object intersected is not the currently stored intersection object
+    if (intersects[0].object != INTERSECTED) {
+      // restore previous intersection object (if it exists) to its original color
+      if (INTERSECTED) {
+        INTERSECTED.material.color.setHex(INTERSECTED.currentHex);
+
+        INTERSECTED.scale.set(1/2 * INTERSECTED.currentscaling.x,
+                            1/2 * INTERSECTED.currentscaling.y,
+                            1/2 * INTERSECTED.currentscaling.z);
+      }
+      sceneOrtho.remove(sceneOrtho.getObjectByName("spritey"));
+      // store reference to closest object as current intersection object
+      INTERSECTED = intersects[0].object;
+      // store color of closest object (for later restoration)
+      INTERSECTED.currentHex = INTERSECTED.material.color.getHex();
+      // store scaling of closest object
+      INTERSECTED.currentscaling = INTERSECTED.scale; 
+      // set a new color for closest object
+      INTERSECTED.material.color.setHex(0xff0000);
+      // set a new scale for closest object
+      INTERSECTED.scale.set(2 * INTERSECTED.scale.x,
+                  2 * INTERSECTED.scale.y,
+                  2 * INTERSECTED.scale.z);
+
+      // make spirite
+      var spritey = makeTextSprite( " " + INTERSECTED.name + " ", 
+        { fontsize: 30, fontface: "Georgia", borderColor: {r:0, g:0, b:0, a:1.0} } );
+      spritey.name = "spritey";
+      spritey.position.set(window.innerWidth/2, -window.innerHeight/2, 1);
+      sceneOrtho.add( spritey );
+    }
+  } else { // there are no intersections
+    sceneOrtho.remove(sceneOrtho.getObjectByName("spritey"));
+    // restore previous intersection object (if it exists) to its original color
+    if (INTERSECTED) {
+      INTERSECTED.material.color.setHex(INTERSECTED.currentHex);
+    
+      INTERSECTED.scale.set(1/2 * INTERSECTED.currentscaling.x,
+                            1/2 * INTERSECTED.currentscaling.y,
+                            1/2 * INTERSECTED.currentscaling.z);
+    }
+    // remove previous intersection object reference
+    //     by setting current intersection object to "nothing"
+    INTERSECTED = null;
   }
 }
 

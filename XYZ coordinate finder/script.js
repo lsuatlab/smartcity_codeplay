@@ -78,7 +78,7 @@ function init() {
 	//makes a box
   //THREE.ImageUtils.crossOrigin = '';
   var loader = new THREE.TextureLoader(); 
-  var texture = loader.load('https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Vizcacha_in_the_Atacama.jpg/800px-Vizcacha_in_the_Atacama.jpg');
+  var texture = loader.load('image/mapTexture.png');
   texture.anisotropy = renderer.getMaxAnisotropy();
 
   var cubeMaterial = new THREE.MeshFaceMaterial([
@@ -123,6 +123,7 @@ function init() {
 	//events
 	window.addEventListener('resize', onWindowResize, false);
 	document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+  document.addEventListener( 'keydown', onDocumentKeyDown, false );
 
 }
 
