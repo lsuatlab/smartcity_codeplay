@@ -1,0 +1,521 @@
+<manifest alg="2" build="2018.1.0.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="http://smartcity.lsu.edu" resolutions="1x" timestamp="1531769486103">
+  <folder name="css">
+    <file name="site_global.css" crc="4073380708"/>
+    <file name="master_a-master.css" crc="4126390141" ref="our-city:research:index"/>
+    <file name="nomq_preview_master_a-master.css" crc="3824530138" ref="our-city:research:index"/>
+    <file name="our-city.css" crc="313727757" ref="our-city"/>
+    <file name="nomq_our-city.css" crc="3839835509" ref="our-city"/>
+    <file name="research.css" crc="141844889" ref="research"/>
+    <file name="nomq_research.css" crc="432282366" ref="research"/>
+    <file name="index.css" crc="215349638" ref="index"/>
+    <file name="nomq_index.css" crc="4256355510" ref="index"/>
+  </folder>
+  <folder name="assets">
+    <file name="revision7.pdf" crc="289215711" seo="true" mt="1529937799000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:our-city:research"/>
+    <file name="museutils.js" crc="340535759" ref="index:our-city:research"/>
+    <file name="whatinput.js" crc="86476730" ref="index:our-city:research"/>
+    <file name="museconfig.js" crc="310584261" ref="index:our-city:research"/>
+    <file name="webpro.js" crc="4059564322" ref="index:our-city:research"/>
+    <file name="musewpslideshow.js" crc="3862962738" ref="index:our-city:research"/>
+    <file name="jquery.museoverlay.js" crc="4147669564" ref="index:our-city:research"/>
+    <file name="touchswipe.js" crc="4075097462" ref="index:our-city:research"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4260645839" ref="index:our-city:research"/>
+    <file name="jquery.watch.js" crc="51536988" ref="index:our-city:research"/>
+    <file name="jquery.museresponsive.js" crc="527716135" ref="index:our-city:research"/>
+    <file name="require.js" crc="7928878" ref="index:our-city:research"/>
+  </folder>
+  <folder name="images">
+    <file name="ssc_logo.png" crc="3972286768" seo="true" ref="index:our-city:research">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="our-city" alt=""/>
+      <caption webpage="our-city" alt=""/>
+      <caption webpage="our-city" alt=""/>
+      <caption webpage="our-city" alt=""/>
+      <caption webpage="research" alt=""/>
+      <caption webpage="research" alt=""/>
+      <caption webpage="research" alt=""/>
+      <caption webpage="research" alt=""/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="index:our-city:research"/>
+    <file name="u52615_states.png" crc="4195854425" ref="index:our-city:research"/>
+    <file name="u52615_states-r.png" crc="104032229" ref="index:our-city:research"/>
+    <file name="u52615_states-a.png" crc="236645854" ref="index:our-city:research"/>
+    <file name="u52616_states.png" crc="58638440" ref="index:our-city:research"/>
+    <file name="u52616_states-r.png" crc="4291208398" ref="index:our-city:research"/>
+    <file name="u52616_states-a.png" crc="487966924" ref="index:our-city:research"/>
+    <file name="u52617_states.png" crc="4095572391" ref="index:our-city:research"/>
+    <file name="u52617_states-r.png" crc="127142099" ref="index:our-city:research"/>
+    <file name="u52617_states-a.png" crc="4245546533" ref="index:our-city:research"/>
+    <file name="u52639_states.png" crc="3969621620" ref="index:our-city:research"/>
+    <file name="u52639_states-r.png" crc="212794214" ref="index:our-city:research"/>
+    <file name="u52639_states-a.png" crc="212794214" ref="index:our-city:research"/>
+    <file name="u52595_states.png" crc="3824643835" ref="index:our-city:research"/>
+    <file name="u52595_states-r.png" crc="473651956" ref="index:our-city:research"/>
+    <file name="u52595_states-a.png" crc="3785434607" ref="index:our-city:research"/>
+    <file name="u52596_states.png" crc="461478972" ref="index:our-city:research"/>
+    <file name="u52596_states-r.png" crc="467636920" ref="index:our-city:research"/>
+    <file name="u52596_states-a.png" crc="524405375" ref="index:our-city:research"/>
+    <file name="u52611_states.png" crc="199079550" ref="index:our-city:research"/>
+    <file name="u52611_states-r.png" crc="4177271088" ref="index:our-city:research"/>
+    <file name="u52611_states-a.png" crc="4177271088" ref="index:our-city:research"/>
+    <file name="u52655_states.png" crc="4129620980" ref="index:our-city:research"/>
+    <file name="u52655_states-r.png" crc="466080252" ref="index:our-city:research"/>
+    <file name="u52655_states-a.png" crc="3896077808" ref="index:our-city:research"/>
+    <file name="u52656_states.png" crc="3978077608" ref="index:our-city:research"/>
+    <file name="u52656_states-r.png" crc="83997526" ref="index:our-city:research"/>
+    <file name="u52656_states-a.png" crc="4196052164" ref="index:our-city:research"/>
+    <file name="u52657_states.png" crc="4115790998" ref="index:our-city:research"/>
+    <file name="u52657_states-r.png" crc="4140195594" ref="index:our-city:research"/>
+    <file name="u52657_states-a.png" crc="302847168" ref="index:our-city:research"/>
+    <file name="u52650_states.png" crc="169970820" ref="index:our-city:research"/>
+    <file name="u52650_states-r.png" crc="464010520" ref="index:our-city:research"/>
+    <file name="u52650_states-a.png" crc="464010520" ref="index:our-city:research"/>
+    <file name="car2.png" crc="4143696738" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="u4285-4.png" crc="369579351" ref="index"/>
+    <file name="u4286-4.png" crc="4284085512" ref="index"/>
+    <file name="smartcity_pic1.png" crc="4039239881" ref="index:our-city:research">
+      <caption webpage="index" alt=""/>
+      <caption webpage="our-city" alt=""/>
+      <caption webpage="research" alt=""/>
+    </file>
+    <file name="u3088-4.png" crc="3807162712" ref="index"/>
+    <file name="u3091.png" crc="527046869" ref="index"/>
+    <file name="u3091-r.png" crc="3867449793" ref="index"/>
+    <file name="u3091-a.png" crc="3867449793" ref="index"/>
+    <file name="u3094.png" crc="131469090" ref="index"/>
+    <file name="u3094-r.png" crc="131469090" ref="index"/>
+    <file name="u650-6.png" crc="47778711" ref="index"/>
+    <file name="u652.png" crc="331851014" ref="index"/>
+    <file name="u652-r.png" crc="3766322979" ref="index"/>
+    <file name="u652-a.png" crc="171535656" ref="index"/>
+    <file name="u649-4.png" crc="3824692996" ref="index"/>
+    <file name="smartcity_bridge3.jpg" crc="4192652580" ref="index">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="u7316-4.png" crc="528515628" ref="index"/>
+    <file name="u7322-4.png" crc="3851401538" ref="index"/>
+    <file name="u7375-4.png" crc="194182792" ref="index"/>
+    <file name="u7359-4.png" crc="4273722215" ref="index"/>
+    <file name="u2890.png" crc="30779917" ref="index"/>
+    <file name="u2890-r.png" crc="3782493183" ref="index"/>
+    <file name="u2890-a.png" crc="4278429361" ref="index"/>
+    <file name="u2897-4.png" crc="71267876" ref="index"/>
+    <file name="u524-7.png" crc="4231084909" ref="index:our-city:research"/>
+    <file name="car2-u644-fr.png" crc="199494784" ref="index"/>
+    <file name="u4285-42.png" crc="4224092835" ref="index"/>
+    <file name="u4286-42.png" crc="146499322" ref="index"/>
+    <file name="smartcity_pic1-u3089-fr.png" crc="187398144" ref="index:our-city"/>
+    <file name="u3088-42.png" crc="4235529945" ref="index"/>
+    <file name="u30912.png" crc="527046869" ref="index"/>
+    <file name="u3091-r2.png" crc="3867449793" ref="index"/>
+    <file name="u3091-a2.png" crc="3867449793" ref="index"/>
+    <file name="u30942.png" crc="473494074" ref="index"/>
+    <file name="u3094-r2.png" crc="473494074" ref="index"/>
+    <file name="u649-42.png" crc="3824692996" ref="index"/>
+    <file name="u650-62.png" crc="4081439714" ref="index"/>
+    <file name="u6522.png" crc="331851014" ref="index"/>
+    <file name="u652-r2.png" crc="3766322979" ref="index"/>
+    <file name="u652-a2.png" crc="171535656" ref="index"/>
+    <file name="u28902.png" crc="30779917" ref="index"/>
+    <file name="u2890-r2.png" crc="3782493183" ref="index"/>
+    <file name="u2890-a2.png" crc="4278429361" ref="index"/>
+    <file name="u2897-42.png" crc="510650762" ref="index"/>
+    <file name="u7316-42.png" crc="3888146718" ref="index"/>
+    <file name="u7322-42.png" crc="327945784" ref="index"/>
+    <file name="u7359-42.png" crc="360270076" ref="index"/>
+    <file name="u7375-42.png" crc="3952368031" ref="index"/>
+    <file name="car2-u644-fr2.png" crc="3771130203" ref="index"/>
+    <file name="u4285-43.png" crc="296993585" ref="index"/>
+    <file name="u4286-43.png" crc="4201302138" ref="index"/>
+    <file name="smartcity_pic1-u3089-fr2.png" crc="4120558408" ref="index:our-city"/>
+    <file name="u3088-43.png" crc="4235529945" ref="index"/>
+    <file name="u30913.png" crc="265856114" ref="index"/>
+    <file name="u3091-r3.png" crc="213951505" ref="index"/>
+    <file name="u3091-a3.png" crc="213951505" ref="index"/>
+    <file name="u30943.png" crc="131469090" ref="index"/>
+    <file name="u3094-r3.png" crc="131469090" ref="index"/>
+    <file name="u650-63.png" crc="47778711" ref="index"/>
+    <file name="u6523.png" crc="3920245610" ref="index"/>
+    <file name="u652-r3.png" crc="4268891940" ref="index"/>
+    <file name="u652-a3.png" crc="4029960946" ref="index"/>
+    <file name="u649-43.png" crc="3824692996" ref="index"/>
+    <file name="u7316-43.png" crc="3996364443" ref="index"/>
+    <file name="u7322-43.png" crc="210556411" ref="index"/>
+    <file name="u7375-43.png" crc="4417629" ref="index"/>
+    <file name="u28903.png" crc="4089638731" ref="index"/>
+    <file name="u2890-r3.png" crc="371611825" ref="index"/>
+    <file name="u2890-a3.png" crc="4094372593" ref="index"/>
+    <file name="u7359-43.png" crc="3921985851" ref="index"/>
+    <file name="u2897-43.png" crc="79106818" ref="index"/>
+    <file name="u4285-44.png" crc="4244457201" ref="index"/>
+    <file name="u4286-44.png" crc="418198826" ref="index"/>
+    <file name="smartcity_pic1-u3089-fr3.png" crc="4064865177" ref="index:our-city"/>
+    <file name="u3088-44.png" crc="4235529945" ref="index"/>
+    <file name="u30914.png" crc="510614620" ref="index"/>
+    <file name="u3091-r4.png" crc="372863986" ref="index"/>
+    <file name="u3091-a4.png" crc="372863986" ref="index"/>
+    <file name="u30944.png" crc="131469090" ref="index"/>
+    <file name="u3094-r4.png" crc="131469090" ref="index"/>
+    <file name="u650-64.png" crc="47778711" ref="index"/>
+    <file name="u6524.png" crc="168293252" ref="index"/>
+    <file name="u652-r4.png" crc="4267045535" ref="index"/>
+    <file name="u652-a4.png" crc="180654491" ref="index"/>
+    <file name="u649-44.png" crc="3824692996" ref="index"/>
+    <file name="u7316-44.png" crc="4275040488" ref="index"/>
+    <file name="u7322-44.png" crc="4002028457" ref="index"/>
+    <file name="u7375-44.png" crc="308858658" ref="index"/>
+    <file name="u28904.png" crc="4189744080" ref="index"/>
+    <file name="u2890-r4.png" crc="3901174472" ref="index"/>
+    <file name="u2890-a4.png" crc="3862864201" ref="index"/>
+    <file name="u7359-44.png" crc="163133305" ref="index"/>
+    <file name="u2897-44.png" crc="79106818" ref="index"/>
+    <file name="smartcity_bridge3.png" crc="463199892" ref="our-city">
+      <caption webpage="our-city" alt=""/>
+      <caption webpage="our-city" alt=""/>
+      <caption webpage="our-city" alt=""/>
+      <caption webpage="our-city" alt=""/>
+    </file>
+    <file name="u35661-4.png" crc="369579351" ref="our-city"/>
+    <file name="u35662-4.png" crc="201855807" ref="our-city"/>
+    <file name="u35664-4.png" crc="283715214" ref="our-city"/>
+    <file name="u35663-4.png" crc="356365298" ref="our-city"/>
+    <file name="u32680-4.png" crc="177759686" ref="our-city"/>
+    <file name="u32723.png" crc="450272102" ref="our-city"/>
+    <file name="u32723-r.png" crc="23801983" ref="our-city"/>
+    <file name="u32723-a.png" crc="23801983" ref="our-city"/>
+    <file name="pasted image 1858x1021.jpg" crc="4097811364" ref="our-city">
+      <caption webpage="our-city" alt=""/>
+    </file>
+    <file name="u32777-4.png" crc="369579351" ref="our-city"/>
+    <file name="u32647-4.png" crc="4132661441" ref="our-city"/>
+    <file name="u32765.png" crc="472895798" ref="our-city"/>
+    <file name="u32765-r.png" crc="472895798" ref="our-city"/>
+    <file name="colors1_2.jpg" crc="3824291621" ref="our-city"/>
+    <file name="u60903-5.png" crc="161416277" ref="our-city"/>
+    <file name="u60905.png" crc="4164828525" ref="our-city"/>
+    <file name="u60905-r.png" crc="84268012" ref="our-city"/>
+    <file name="u60905-a.png" crc="84268012" ref="our-city"/>
+    <file name="u60901-4.png" crc="4267279272" ref="our-city"/>
+    <file name="vis.png" crc="177109464" ref="our-city:research">
+      <caption webpage="our-city" alt=""/>
+      <caption webpage="our-city" alt=""/>
+      <caption webpage="research" alt=""/>
+    </file>
+    <file name="u32753-5.png" crc="161416277" ref="our-city"/>
+    <file name="u32698.png" crc="4164828525" ref="our-city"/>
+    <file name="u32698-r.png" crc="84268012" ref="our-city"/>
+    <file name="u32698-a.png" crc="84268012" ref="our-city"/>
+    <file name="u32690-4.png" crc="4267279272" ref="our-city"/>
+    <file name="u35661-42.png" crc="4224092835" ref="our-city"/>
+    <file name="u35662-42.png" crc="4021292986" ref="our-city"/>
+    <file name="u35664-42.png" crc="358180844" ref="our-city"/>
+    <file name="u35663-42.png" crc="356365298" ref="our-city"/>
+    <file name="u32680-42.png" crc="177759686" ref="our-city"/>
+    <file name="u327232.png" crc="450272102" ref="our-city"/>
+    <file name="u32723-r2.png" crc="23801983" ref="our-city"/>
+    <file name="u32723-a2.png" crc="23801983" ref="our-city"/>
+    <file name="u32777-42.png" crc="4224092835" ref="our-city"/>
+    <file name="u32647-42.png" crc="4007156396" ref="our-city"/>
+    <file name="u327652.png" crc="472895798" ref="our-city"/>
+    <file name="u32765-r2.png" crc="472895798" ref="our-city"/>
+    <file name="u32753-52.png" crc="161416277" ref="our-city"/>
+    <file name="u326982.png" crc="4164828525" ref="our-city"/>
+    <file name="u32698-r2.png" crc="84268012" ref="our-city"/>
+    <file name="u32698-a2.png" crc="84268012" ref="our-city"/>
+    <file name="u32690-42.png" crc="66406718" ref="our-city"/>
+    <file name="u60903-52.png" crc="161416277" ref="our-city"/>
+    <file name="u609052.png" crc="4164828525" ref="our-city"/>
+    <file name="u60905-r2.png" crc="84268012" ref="our-city"/>
+    <file name="u60905-a2.png" crc="84268012" ref="our-city"/>
+    <file name="u60901-42.png" crc="66406718" ref="our-city"/>
+    <file name="u32680-43.png" crc="177759686" ref="our-city"/>
+    <file name="u327233.png" crc="4148360" ref="our-city"/>
+    <file name="u32723-r3.png" crc="415029701" ref="our-city"/>
+    <file name="u32723-a3.png" crc="415029701" ref="our-city"/>
+    <file name="pasted image 1858x1021-u32758-fr.jpg" crc="4278989619" ref="our-city"/>
+    <file name="u32777-43.png" crc="296993585" ref="our-city"/>
+    <file name="u32647-43.png" crc="4089553292" ref="our-city"/>
+    <file name="u327653.png" crc="472895798" ref="our-city"/>
+    <file name="u32765-r3.png" crc="472895798" ref="our-city"/>
+    <file name="vis-u32762-fr.png" crc="108143029" ref="our-city:research"/>
+    <file name="u326983.png" crc="4062305422" ref="our-city"/>
+    <file name="u32698-r3.png" crc="85604904" ref="our-city"/>
+    <file name="u32698-a3.png" crc="85604904" ref="our-city"/>
+    <file name="u32753-53.png" crc="161416277" ref="our-city"/>
+    <file name="u32690-43.png" crc="4270061664" ref="our-city"/>
+    <file name="colors1_2-u60902-fr.jpg" crc="3890278293" ref="our-city"/>
+    <file name="u609053.png" crc="4062305422" ref="our-city"/>
+    <file name="u60905-r3.png" crc="85604904" ref="our-city"/>
+    <file name="u60905-a3.png" crc="85604904" ref="our-city"/>
+    <file name="u60903-53.png" crc="161416277" ref="our-city"/>
+    <file name="u60901-43.png" crc="4270061664" ref="our-city"/>
+    <file name="u35661-43.png" crc="296993585" ref="our-city"/>
+    <file name="u35662-43.png" crc="3958340796" ref="our-city"/>
+    <file name="u35664-43.png" crc="283715214" ref="our-city"/>
+    <file name="u35663-43.png" crc="37625834" ref="our-city"/>
+    <file name="u32680-44.png" crc="177759686" ref="our-city"/>
+    <file name="u327234.png" crc="4119672273" ref="our-city"/>
+    <file name="u32723-r4.png" crc="4032359782" ref="our-city"/>
+    <file name="u32723-a4.png" crc="4032359782" ref="our-city"/>
+    <file name="pasted image 1858x1021-u32758-fr2.jpg" crc="4035712449" ref="our-city"/>
+    <file name="u32777-44.png" crc="4244457201" ref="our-city"/>
+    <file name="u32647-44.png" crc="3928834754" ref="our-city"/>
+    <file name="u327654.png" crc="472895798" ref="our-city"/>
+    <file name="u32765-r4.png" crc="472895798" ref="our-city"/>
+    <file name="u326984.png" crc="114533652" ref="our-city"/>
+    <file name="u32698-r4.png" crc="149149398" ref="our-city"/>
+    <file name="u32698-a4.png" crc="149149398" ref="our-city"/>
+    <file name="u32753-54.png" crc="161416277" ref="our-city"/>
+    <file name="u32690-44.png" crc="4270061664" ref="our-city"/>
+    <file name="colors1_2-u60902-fr2.jpg" crc="3934891217" ref="our-city"/>
+    <file name="u609054.png" crc="114533652" ref="our-city"/>
+    <file name="u60905-r4.png" crc="149149398" ref="our-city"/>
+    <file name="u60905-a4.png" crc="149149398" ref="our-city"/>
+    <file name="u60903-54.png" crc="161416277" ref="our-city"/>
+    <file name="u60901-44.png" crc="4270061664" ref="our-city"/>
+    <file name="u35661-44.png" crc="4244457201" ref="our-city"/>
+    <file name="u35662-44.png" crc="3922832177" ref="our-city"/>
+    <file name="u35664-44.png" crc="283715214" ref="our-city"/>
+    <file name="u35663-44.png" crc="37625834" ref="our-city"/>
+    <file name="u34126-4.png" crc="3782416181" ref="research"/>
+    <file name="u34112.png" crc="107815905" ref="research"/>
+    <file name="u34112-r.png" crc="4142543489" ref="research"/>
+    <file name="u34112-a.png" crc="4142543489" ref="research"/>
+    <file name="u34141.png" crc="3797580628" ref="research"/>
+    <file name="u34141-r.png" crc="182888885" ref="research"/>
+    <file name="u34141-a.png" crc="182888885" ref="research"/>
+    <file name="u34159-4.png" crc="3933527780" ref="research"/>
+    <file name="car1-u34143-fr.jpg" crc="3985483678" ref="research"/>
+    <file name="u34189-4.png" crc="3943632820" ref="research"/>
+    <file name="u34107-4.png" crc="325540517" ref="research"/>
+    <file name="u34104-4.png" crc="30971303" ref="research"/>
+    <file name="u34136.png" crc="390327014" ref="research"/>
+    <file name="u34136-r.png" crc="4151048049" ref="research"/>
+    <file name="u34136-a.png" crc="302821952" ref="research"/>
+    <file name="u34205-4.png" crc="126050315" ref="research"/>
+    <file name="smartcity_pic2.png" crc="492719379" ref="research">
+      <caption webpage="research" alt=""/>
+      <caption webpage="research" alt=""/>
+    </file>
+    <file name="u34153-4.png" crc="391362401" ref="research"/>
+    <file name="u34121-4.png" crc="356365298" ref="research"/>
+    <file name="u34147.png" crc="450272102" ref="research"/>
+    <file name="u34147-r.png" crc="23801983" ref="research"/>
+    <file name="u34147-a.png" crc="23801983" ref="research"/>
+    <file name="u34152.png" crc="398568761" ref="research"/>
+    <file name="u34152-r.png" crc="3821388855" ref="research"/>
+    <file name="u34152-a.png" crc="3821388855" ref="research"/>
+    <file name="u34226-4.png" crc="306828520" ref="research"/>
+    <file name="u34211-5.png" crc="110124145" ref="research"/>
+    <file name="nykim.jpg" crc="51373402" ref="research">
+      <caption webpage="research" alt=""/>
+    </file>
+    <file name="u34240-12.png" crc="105825132" ref="research"/>
+    <file name="nam_hyeyeon_2015-e1452888397479-150x150.jpg" crc="4043381681" ref="research">
+      <caption webpage="research" alt=""/>
+    </file>
+    <file name="u34225-12.png" crc="105825132" ref="research"/>
+    <file name="u34223-3.png" crc="3832407653" ref="research"/>
+    <file name="ostrenko_derick-e1402603016988-150x150.jpg" crc="502462979" ref="research">
+      <caption webpage="research" alt=""/>
+    </file>
+    <file name="u34129-12.png" crc="105825132" ref="research"/>
+    <file name="u34227-12.png" crc="105825132" ref="research"/>
+    <file name="u34214-4.png" crc="335853044" ref="research"/>
+    <file name="u34163-4.png" crc="331242766" ref="research"/>
+    <file name="u34105-4.png" crc="202057463" ref="research"/>
+    <file name="u34116.png" crc="4139951918" ref="research"/>
+    <file name="u34116-r.png" crc="326545058" ref="research"/>
+    <file name="u34116-a.png" crc="4277166513" ref="research"/>
+    <file name="u34162-4.png" crc="3872265658" ref="research"/>
+    <file name="u34122-4.png" crc="3917720248" ref="research"/>
+    <file name="u34142-4.png" crc="140776145" ref="research"/>
+    <file name="u34175.png" crc="257926229" ref="research"/>
+    <file name="u34175-r.png" crc="532261738" ref="research"/>
+    <file name="u34176.png" crc="393626833" ref="research"/>
+    <file name="u34176-r.png" crc="3936685672" ref="research"/>
+    <file name="u34167.png" crc="3951930149" ref="research"/>
+    <file name="u34167-r.png" crc="217573937" ref="research"/>
+    <file name="u34167-m.png" crc="217573937" ref="research"/>
+    <file name="u34167-a.png" crc="217573937" ref="research"/>
+    <file name="u34138.png" crc="30779917" ref="research"/>
+    <file name="u34138-r.png" crc="241351732" ref="research"/>
+    <file name="u34138-a.png" crc="4278429361" ref="research"/>
+    <file name="u34217-4.png" crc="4288758695" ref="research"/>
+    <file name="u34126-42.png" crc="3782416181" ref="research"/>
+    <file name="smartcity_pic1-u34238-fr.png" crc="4086391574" ref="research"/>
+    <file name="u341122.png" crc="107815905" ref="research"/>
+    <file name="u34112-r2.png" crc="4142543489" ref="research"/>
+    <file name="u34112-a2.png" crc="4142543489" ref="research"/>
+    <file name="u341412.png" crc="3797580628" ref="research"/>
+    <file name="u34141-r2.png" crc="182888885" ref="research"/>
+    <file name="u34141-a2.png" crc="182888885" ref="research"/>
+    <file name="u34159-42.png" crc="3944574755" ref="research"/>
+    <file name="car1-u34143-fr2.jpg" crc="181389883" ref="research"/>
+    <file name="u34189-42.png" crc="65740803" ref="research"/>
+    <file name="u34107-42.png" crc="509008586" ref="research"/>
+    <file name="u34104-42.png" crc="30971303" ref="research"/>
+    <file name="u341362.png" crc="390327014" ref="research"/>
+    <file name="u34136-r2.png" crc="4151048049" ref="research"/>
+    <file name="u34136-a2.png" crc="302821952" ref="research"/>
+    <file name="u34205-42.png" crc="3884346621" ref="research"/>
+    <file name="vis-u34219-fr.png" crc="3935748106" ref="research"/>
+    <file name="u34153-42.png" crc="391362401" ref="research"/>
+    <file name="u34121-42.png" crc="356365298" ref="research"/>
+    <file name="u341472.png" crc="450272102" ref="research"/>
+    <file name="u34147-r2.png" crc="23801983" ref="research"/>
+    <file name="u34147-a2.png" crc="23801983" ref="research"/>
+    <file name="u341522.png" crc="398568761" ref="research"/>
+    <file name="u34152-r2.png" crc="3821388855" ref="research"/>
+    <file name="u34152-a2.png" crc="3821388855" ref="research"/>
+    <file name="u34226-42.png" crc="306828520" ref="research"/>
+    <file name="u34214-42.png" crc="335853044" ref="research"/>
+    <file name="u34211-52.png" crc="110124145" ref="research"/>
+    <file name="u34240-122.png" crc="105825132" ref="research"/>
+    <file name="u34225-122.png" crc="105825132" ref="research"/>
+    <file name="u34223-32.png" crc="3957486761" ref="research"/>
+    <file name="u34129-122.png" crc="105825132" ref="research"/>
+    <file name="u34227-122.png" crc="105825132" ref="research"/>
+    <file name="u34217-42.png" crc="4288758695" ref="research"/>
+    <file name="u34163-42.png" crc="3957564706" ref="research"/>
+    <file name="u34105-42.png" crc="362369379" ref="research"/>
+    <file name="u341162.png" crc="4139951918" ref="research"/>
+    <file name="u34116-r2.png" crc="326545058" ref="research"/>
+    <file name="u34116-a2.png" crc="4277166513" ref="research"/>
+    <file name="u34162-42.png" crc="455873963" ref="research"/>
+    <file name="u34122-42.png" crc="4008024566" ref="research"/>
+    <file name="u34142-42.png" crc="4234044472" ref="research"/>
+    <file name="u341382.png" crc="30779917" ref="research"/>
+    <file name="u34138-r2.png" crc="241351732" ref="research"/>
+    <file name="u34138-a2.png" crc="4278429361" ref="research"/>
+    <file name="u341752.png" crc="257926229" ref="research"/>
+    <file name="u34175-r2.png" crc="532261738" ref="research"/>
+    <file name="u341762.png" crc="393626833" ref="research"/>
+    <file name="u34176-r2.png" crc="3936685672" ref="research"/>
+    <file name="u341672.png" crc="3951930149" ref="research"/>
+    <file name="u34167-r2.png" crc="217573937" ref="research"/>
+    <file name="u34167-m2.png" crc="217573937" ref="research"/>
+    <file name="u34167-a2.png" crc="217573937" ref="research"/>
+    <file name="u34126-43.png" crc="3782416181" ref="research"/>
+    <file name="smartcity_pic1-u34238-fr2.png" crc="3930974634" ref="research"/>
+    <file name="u341123.png" crc="260771279" ref="research"/>
+    <file name="u34112-r3.png" crc="3989009551" ref="research"/>
+    <file name="u34112-a3.png" crc="3989009551" ref="research"/>
+    <file name="u341413.png" crc="3863086991" ref="research"/>
+    <file name="u34141-r3.png" crc="276105035" ref="research"/>
+    <file name="u34141-a3.png" crc="276105035" ref="research"/>
+    <file name="u34159-43.png" crc="3933527780" ref="research"/>
+    <file name="u341473.png" crc="4148360" ref="research"/>
+    <file name="u34147-r3.png" crc="415029701" ref="research"/>
+    <file name="u34147-a3.png" crc="415029701" ref="research"/>
+    <file name="u341523.png" crc="4166553728" ref="research"/>
+    <file name="u34152-r3.png" crc="4059589726" ref="research"/>
+    <file name="u34152-a3.png" crc="4059589726" ref="research"/>
+    <file name="u34211-53.png" crc="110124145" ref="research"/>
+    <file name="car1-u34143-fr3.jpg" crc="506604882" ref="research"/>
+    <file name="u34189-43.png" crc="119037299" ref="research"/>
+    <file name="u34107-43.png" crc="3911126767" ref="research"/>
+    <file name="u34104-43.png" crc="30971303" ref="research"/>
+    <file name="u341363.png" crc="10971599" ref="research"/>
+    <file name="u34136-r3.png" crc="45503179" ref="research"/>
+    <file name="u34136-a3.png" crc="296512002" ref="research"/>
+    <file name="u34205-43.png" crc="126050315" ref="research"/>
+    <file name="smartcity_pic2-u34145-fr.png" crc="10597040" ref="research"/>
+    <file name="u34226-43.png" crc="306828520" ref="research"/>
+    <file name="u34214-43.png" crc="335853044" ref="research"/>
+    <file name="u34223-33.png" crc="3938685490" ref="research"/>
+    <file name="u34225-123.png" crc="3817624044" ref="research"/>
+    <file name="u34240-123.png" crc="3817624044" ref="research"/>
+    <file name="u34227-123.png" crc="3817624044" ref="research"/>
+    <file name="u34129-123.png" crc="3817624044" ref="research"/>
+    <file name="u34217-43.png" crc="123869176" ref="research"/>
+    <file name="u34163-43.png" crc="497305246" ref="research"/>
+    <file name="u34105-43.png" crc="422706327" ref="research"/>
+    <file name="u34142-43.png" crc="532275340" ref="research"/>
+    <file name="u341163.png" crc="4207420495" ref="research"/>
+    <file name="u34116-r3.png" crc="4220266913" ref="research"/>
+    <file name="u34116-a3.png" crc="352548836" ref="research"/>
+    <file name="u341383.png" crc="4089638731" ref="research"/>
+    <file name="u34138-r3.png" crc="529647646" ref="research"/>
+    <file name="u34138-a3.png" crc="4094372593" ref="research"/>
+    <file name="u34162-43.png" crc="329500481" ref="research"/>
+    <file name="u34122-43.png" crc="4115994094" ref="research"/>
+    <file name="u341753.png" crc="257926229" ref="research"/>
+    <file name="u34175-r3.png" crc="532261738" ref="research"/>
+    <file name="u341763.png" crc="393626833" ref="research"/>
+    <file name="u34176-r3.png" crc="3936685672" ref="research"/>
+    <file name="u341673.png" crc="3951930149" ref="research"/>
+    <file name="u34167-r3.png" crc="217573937" ref="research"/>
+    <file name="u34167-m3.png" crc="217573937" ref="research"/>
+    <file name="u34167-a3.png" crc="217573937" ref="research"/>
+    <file name="u34121-43.png" crc="37625834" ref="research"/>
+    <file name="u34153-43.png" crc="391362401" ref="research"/>
+    <file name="u34126-44.png" crc="3782416181" ref="research"/>
+    <file name="smartcity_pic1-u34238-fr3.png" crc="4184361827" ref="research"/>
+    <file name="u341124.png" crc="362139913" ref="research"/>
+    <file name="u34112-r4.png" crc="3946645933" ref="research"/>
+    <file name="u34112-a4.png" crc="3946645933" ref="research"/>
+    <file name="u341414.png" crc="295988821" ref="research"/>
+    <file name="u34141-r4.png" crc="100923840" ref="research"/>
+    <file name="u34141-a4.png" crc="100923840" ref="research"/>
+    <file name="u34159-44.png" crc="3933527780" ref="research"/>
+    <file name="u341474.png" crc="4119672273" ref="research"/>
+    <file name="u34147-r4.png" crc="4032359782" ref="research"/>
+    <file name="u34147-a4.png" crc="4032359782" ref="research"/>
+    <file name="u341524.png" crc="4292263787" ref="research"/>
+    <file name="u34152-r4.png" crc="4175602441" ref="research"/>
+    <file name="u34152-a4.png" crc="4175602441" ref="research"/>
+    <file name="u34211-54.png" crc="110124145" ref="research"/>
+    <file name="u34189-44.png" crc="510743137" ref="research"/>
+    <file name="u34107-44.png" crc="36877803" ref="research"/>
+    <file name="u34104-44.png" crc="30971303" ref="research"/>
+    <file name="u341364.png" crc="15560281" ref="research"/>
+    <file name="u34136-r4.png" crc="3858764374" ref="research"/>
+    <file name="u34136-a4.png" crc="4043034875" ref="research"/>
+    <file name="u34205-44.png" crc="126050315" ref="research"/>
+    <file name="smartcity_pic2-u34145-fr2.png" crc="3882804193" ref="research"/>
+    <file name="u34226-44.png" crc="306828520" ref="research"/>
+    <file name="u34214-44.png" crc="335853044" ref="research"/>
+    <file name="u34223-34.png" crc="9082107" ref="research"/>
+    <file name="u34225-124.png" crc="3817624044" ref="research"/>
+    <file name="u34240-124.png" crc="3817624044" ref="research"/>
+    <file name="u34227-124.png" crc="3817624044" ref="research"/>
+    <file name="u34129-124.png" crc="3817624044" ref="research"/>
+    <file name="u34217-44.png" crc="123869176" ref="research"/>
+    <file name="u34163-44.png" crc="4042809871" ref="research"/>
+    <file name="u34105-44.png" crc="3935522697" ref="research"/>
+    <file name="u34142-44.png" crc="296237608" ref="research"/>
+    <file name="u341164.png" crc="3879225617" ref="research"/>
+    <file name="u34116-r4.png" crc="50060797" ref="research"/>
+    <file name="u34116-a4.png" crc="457530415" ref="research"/>
+    <file name="u341384.png" crc="4189744080" ref="research"/>
+    <file name="u34138-r4.png" crc="3938060734" ref="research"/>
+    <file name="u34138-a4.png" crc="3862864201" ref="research"/>
+    <file name="u34162-44.png" crc="113110606" ref="research"/>
+    <file name="u34122-44.png" crc="3866840353" ref="research"/>
+    <file name="u341754.png" crc="3971398883" ref="research"/>
+    <file name="u34175-r4.png" crc="3989689339" ref="research"/>
+    <file name="u341764.png" crc="217496991" ref="research"/>
+    <file name="u34176-r4.png" crc="241625604" ref="research"/>
+    <file name="u341674.png" crc="156633548" ref="research"/>
+    <file name="u34167-r4.png" crc="4058596814" ref="research"/>
+    <file name="u34167-m4.png" crc="4058596814" ref="research"/>
+    <file name="u34167-a4.png" crc="4058596814" ref="research"/>
+    <file name="u34121-44.png" crc="37625834" ref="research"/>
+    <file name="u34153-44.png" crc="391362401" ref="research"/>
+  </folder>
+  <file name="index.html" crc="4092767691" seo="true" mt="1531769207997" redirect="true"/>
+  <file name="our-city.html" crc="4234057152" seo="true" mt="1531769207997" redirect="true"/>
+  <file name="research.html" crc="3774417691" seo="true" mt="1531769482837" redirect="true"/>
+</manifest>
