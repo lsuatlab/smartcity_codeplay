@@ -1,8 +1,8 @@
 var camera, cameraOrtho, scene, sceneOrtho, renderer;
 var controls, stats, raycaster, oControls;
+var textFile = null;
 var mouse = new THREE.Vector2(), INTERSECTED, label;
-var scaling = 1/4;
-
+var listOfKeys = Object.keys(pointMappings);
 var particlesTotal = 0;
 var positions = [];
 var objects = [];
@@ -28,27 +28,21 @@ var colors = {
 }
 
 var geometry = new THREE.SphereGeometry( .25, 32, 32 );
-var material = new THREE.MeshBasicMaterial( {color: 0xffff00,
-                                          transparent: true,
-                                          opacity: 0.3} );
-var sphere = new THREE.Mesh( geometry, material );
-sphere.scale.x = sphere.scale.y = scaling;
-sphere.name = "location";
+  var material = new THREE.MeshBasicMaterial( {color: 0xffff00,
+                                              transparent: true,
+                                              opacity: 0.7} );
+  var sphere = new THREE.Mesh( geometry, material );
+  sphere.scale.x = sphere.scale.y = 1/8;
+  sphere.name = "location"
 
-const originalWarn = console.warn.bind( console );
+
+const originalWarn = console.warn.bind( console )
 console.warn = (text) => !text.includes('THREE') && originalWarn(text);
 
 init();
 animate();
 
 function init() {
-
-	//stats for debug purposes
-	/*
-	stats = new Stats();
-	stats.showPanel( 0 );
-	document.body.appendChild( stats.dom );
-	*/
 
 	//scene
 	scene = new THREE.Scene();
@@ -76,14 +70,10 @@ function init() {
   renderer.domElement.style.position = 'absolute';
   document.getElementById('container').appendChild(renderer.domElement);
 
-  //group
-  var group = new THREE.Group();
-
 	//makes a box
-  THREE.ImageUtils.crossOrigin = null;
+  //THREE.ImageUtils.crossOrigin = '';
   var loader = new THREE.TextureLoader(); 
   var texture = loader.load('image/mapTexture.png');
-  //var texture = loader.load('  https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Vizcacha_in_the_Atacama.jpg/250px-Vizcacha_in_the_Atacama.jpg');
   texture.anisotropy = renderer.getMaxAnisotropy();
 
   var cubeMaterial = new THREE.MeshFaceMaterial([
@@ -110,55 +100,15 @@ function init() {
 
   var cubeGeometry = new THREE.CubeGeometry(2,10,10);                          
   let  cube = new THREE.Mesh(cubeGeometry, cubeMaterial); 
-  cube.name = "Map of Baton Rouge";  
-  cube.rotation.set(0, -Math.PI/2, Math.PI/4);
-                
-  group.add( cube ); 
+  cube.name = "image";
+  cube.rotation.set(0, -Math.PI /2, Math.PI /4);                  
+  scene.add( cube ); 
   objects.push( cube );
   particlesTotal++;
+    
 
-	//makes sprites
-  var object;
+  var count = particlesTotal;
 
-  //remove this in later builds, adds flair by randomizing colors for crimes
-  Object.keys(colors).forEach(function(key) {
-  	colors[key] = Math.random() * 0xffffff;
-  })
-
-  var counter, listOfKeys;
-  counter = scaling;
-
-
-	crimeData.features.forEach(function(data) {
-		listOfKeys = Object.keys(data.properties.CRIME_INDEX);
-    counter = scaling;
-		//we start at 1 because I've laid out the data in such a way that the first value
-		//is Total which we can ignore
-		for(var i = 1; i < listOfKeys.length; i++)
-		{
-			for(var j = 0; j < data.properties.CRIME_INDEX[listOfKeys[i]]; j++)
-			{
-				object = new createSprite(
-          	'https://upload.wikimedia.org/wikipedia/commons/0/00/WX_circle_white.png', 
-          	colors[listOfKeys[i]]);
-        object.position.set(
-        		pointMappings[data.properties.POLICE_DISTRICT_NO][0] ,
-        		pointMappings[data.properties.POLICE_DISTRICT_NO][1] + counter/2,
-        		pointMappings[data.properties.POLICE_DISTRICT_NO][2] + counter/2,
-        		);
-        counter += scaling;
-        object.name = listOfKeys[i];
-        object.scale.set(scaling, scaling, scaling);
-        objects.push(object);
-        particlesTotal++;
-        group.add(object);
-			}
-		} 
-	})
-	var count = particlesTotal;
-  console.log(count);
-  group.scale.set(2,2,2);
-  scene.add(group);
   //orbit controls
 	oControls = new THREE.OrbitControls( camera, renderer.domElement );
 
@@ -168,6 +118,7 @@ function init() {
 	//events
 	window.addEventListener('resize', onWindowResize, false);
 	document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+  document.addEventListener( 'keydown', onDocumentKeyDown, false );
 
 }
 
@@ -176,6 +127,22 @@ function animate() {
   requestAnimationFrame(animate);
 
   var time = performance.now();
+  if(current < listOfKeys.length)
+  {
+  sceneOrtho.remove(sceneOrtho.getObjectByName("spritey"));
+  var spritey = makeTextSprite( " Enter: " + listOfKeys[current] + " ", 
+      { fontsize: 30, fontface: "Georgia", borderColor: {r:0, g:0, b:0, a:1.0} } );
+    spritey.name = "spritey";
+    spritey.position.set(window.innerWidth/2, window.innerHeight/4, 1);
+    sceneOrtho.add( spritey );
+  } else {
+    sceneOrtho.remove(sceneOrtho.getObjectByName("spritey"));
+    var spritey = makeTextSprite( " Done! Check console log ", 
+      { fontsize: 30, fontface: "Georgia", borderColor: {r:0, g:0, b:0, a:1.0} } );
+    spritey.name = "spritey";
+    spritey.position.set(window.innerWidth/2, window.innerHeight/4, 1);
+    sceneOrtho.add( spritey );
+  }
 
   renderer.clear();
 	renderer.render( scene, camera );

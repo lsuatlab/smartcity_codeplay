@@ -18,25 +18,28 @@ function onWindowResize() {
   }
 
   renderer.setSize( window.innerWidth, window.innerHeight );
-}
+};
 
 function onDocumentKeyDown( event ) {
-  raycaster.setFromCamera( mouse, camera );
-  var intersects = raycaster.intersectObjects( objects );
-  if ( intersects.length > 0 ) {
-    var temp = intersects[ 0 ].point;
-    var v = new THREE.Vector3();
-    v.copy(sphere.position);
-    sphere.localToWorld(v);
-    objects[0].worldToLocal(v);
-    console.log("world: [" + temp.x + ", " + temp.y + ", " + temp.z + "]");
-    console.log("relative: [" + v.x + ", " + v.y + ", " + v.z + "]");
-  }
-  else {
-    console.log("no object detected");
-  }
-  console.log("-----------------------------------\n");
-}
+  if(current < listOfKeys.length)
+  {
+    raycaster.setFromCamera( mouse, camera );
+    var intersects = raycaster.intersectObjects( objects );
+    if ( intersects.length > 0 ) {
+      var temp = intersects[ 0 ].point;
+      pointMappings[listOfKeys[current]] = [temp.x, temp.y, temp.z];
+      console.log(listOfKeys[current] + ": " + pointMappings[listOfKeys[current]]);
+      current++;
+      if (current == listOfKeys.length)
+      {
+        console.log(JSON.stringify(pointMappings, null, 2));
+      }
+    else {
+      console.log("no object detected");
+    }
+    console.log("-----------------------------------\n");
+  } 
+};
 
 function onDocumentMouseMove( event ) {	       
   sceneOrtho.remove(sceneOrtho.getObjectByName("spriteyX"));
@@ -71,7 +74,7 @@ function onDocumentMouseMove( event ) {
   else {
     scene.remove(scene.getObjectByName("location"));
   }
-}
+};
 
 //Weird function used to make sprites out of text. Thank you github user mcode
 //slightly modified to removed older parameters that aren't used anymore
@@ -111,7 +114,7 @@ function makeTextSprite( message, parameters )
   sprite.scale.set(spriteMaterial.map.image.width, spriteMaterial.map.image.height, 1);
   sprite.center.set( 1, 0 );
   return sprite;  
-}
+};
 
 // function for drawing rounded rectangles
 function roundRect(ctx, x, y, w, h, r) 
@@ -129,7 +132,7 @@ function roundRect(ctx, x, y, w, h, r)
     ctx.closePath();
     ctx.fill();
   ctx.stroke();   
-}
+};
 
 
 
@@ -143,12 +146,35 @@ var getTexture = function (filename) {
 };
 
 function createSprite(filename, color) {
-            var spriteMaterial = new THREE.SpriteMaterial({
-                        //opacity: opacity,
-                        color: color,
-                        //transparent: transparent,
-                        map: getTexture(filename)
-                    });
-            var sprite = new THREE.Sprite(spriteMaterial);
-            return sprite;
-        }
+    var spriteMaterial = new THREE.SpriteMaterial({
+                //opacity: opacity,
+                color: color,
+                //transparent: transparent,
+                map: getTexture(filename)
+            });
+    var sprite = new THREE.Sprite(spriteMaterial);
+    return sprite;
+};
+
+
+function makeTextFile(text) {
+  var data = new Blob([text], {type: 'text/plain'});
+
+  // If we are replacing a previously generated file we need to
+  // manually revoke the object URL to avoid memory leaks.
+  if (textFile !== null) {
+    window.URL.revokeObjectURL(textFile);
+  }
+
+  textFile = window.URL.createObjectURL(data);
+
+  // returns a URL you can use as a href
+  return textFile;
+};
+
+function writeTextFile(filepath, output) {
+  var txtFile = new File(filepath);
+  txtFile.open("w"); //
+  txtFile.writeln(output);
+  txtFile.close();
+}
