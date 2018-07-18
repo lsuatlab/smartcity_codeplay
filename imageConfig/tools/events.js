@@ -33,12 +33,12 @@ function onDocumentKeyDown( event ) {
       if (current == listOfKeys.length)
       {
         console.log(JSON.stringify(pointMappings, null, 2));
-      }
-    else {
-      console.log("no object detected");
+      } 
+  	} else {
+	      console.log("no object detected");
     }
-    console.log("-----------------------------------\n");
-  } 
+    console.log("-----------------------------------\n"); 
+  }
 };
 
 function onDocumentMouseMove( event ) {	       
