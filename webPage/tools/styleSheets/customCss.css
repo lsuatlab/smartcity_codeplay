@@ -1,0 +1,20 @@
+/*if you need to make any style changes do it here 
+  this code should override the base bootstrap stuff*/
+
+/*I tried not to write much css to style the webpage, 
+  instead my css is there to add in some functionality */
+
+
+/*this code here enables hover functionality for dropdown menus */
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown.show {
+	.max-width: 150px;
+}
+
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+}

@@ -3947,6 +3947,8 @@ tbody.collapse.show {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .navbar > .container,
