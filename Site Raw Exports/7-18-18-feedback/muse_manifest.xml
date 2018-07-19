@@ -1,14 +1,14 @@
-<manifest alg="2" build="2018.1.0.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="http://smartcity.lsu.edu" resolutions="1x" timestamp="1532021699857">
+<manifest alg="2" build="2018.1.0.386" opt="true" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="http://smartcity.lsu.edu" resolutions="1x" timestamp="1532023042446">
   <folder name="css">
     <file name="site_global.css" crc="327730298"/>
-    <file name="master_a-master.css" crc="3780409802" ref="our-city---smart-safe-connected:research---smart-safe-connected:index"/>
-    <file name="nomq_preview_master_a-master.css" crc="3824530138" ref="our-city---smart-safe-connected:research---smart-safe-connected:index"/>
-    <file name="our-city---smart-safe-connected.css" crc="249082546" ref="our-city---smart-safe-connected"/>
-    <file name="nomq_our-city---smart-safe-connected.css" crc="4096154844" ref="our-city---smart-safe-connected"/>
-    <file name="research---smart-safe-connected.css" crc="3856478669" ref="research---smart-safe-connected"/>
-    <file name="nomq_research---smart-safe-connected.css" crc="4037273645" ref="research---smart-safe-connected"/>
-    <file name="index.css" crc="3791000076" ref="index"/>
-    <file name="nomq_index.css" crc="208527969" ref="index"/>
+    <file name="master_a-master.css" crc="3970603887" ref="our-city---smart-safe-connected:research---smart-safe-connected:index"/>
+    <file name="nomq_preview_master_a-master.css" crc="4184332057" ref="our-city---smart-safe-connected:research---smart-safe-connected:index"/>
+    <file name="our-city---smart-safe-connected.css" crc="249965806" ref="our-city---smart-safe-connected"/>
+    <file name="nomq_our-city---smart-safe-connected.css" crc="123672921" ref="our-city---smart-safe-connected"/>
+    <file name="research---smart-safe-connected.css" crc="24354766" ref="research---smart-safe-connected"/>
+    <file name="nomq_research---smart-safe-connected.css" crc="3802187931" ref="research---smart-safe-connected"/>
+    <file name="index.css" crc="4113676115" ref="index"/>
+    <file name="nomq_index.css" crc="465646441" ref="index"/>
   </folder>
   <folder name="fonts">
     <file name="carroisgothic-regular-webfont.woff" crc="4139156405"/>
@@ -30,10 +30,10 @@
     <file name="jquery.watch.js" crc="51536988" ref="index:our-city---smart-safe-connected:research---smart-safe-connected"/>
     <file name="jquery.museresponsive.js" crc="527716135" ref="index:our-city---smart-safe-connected:research---smart-safe-connected"/>
     <file name="require.js" crc="7928878" ref="index:our-city---smart-safe-connected:research---smart-safe-connected"/>
-    <file name="webpro.js" crc="4059564322" ref="research---smart-safe-connected"/>
-    <file name="musewpslideshow.js" crc="3862962738" ref="research---smart-safe-connected"/>
-    <file name="jquery.museoverlay.js" crc="4147669564" ref="research---smart-safe-connected"/>
-    <file name="touchswipe.js" crc="4075097462" ref="research---smart-safe-connected"/>
+    <file name="webpro.js" crc="4059564322" ref="research---smart-safe-connected:index:our-city---smart-safe-connected"/>
+    <file name="musewpslideshow.js" crc="3862962738" ref="research---smart-safe-connected:index:our-city---smart-safe-connected"/>
+    <file name="jquery.museoverlay.js" crc="4147669564" ref="research---smart-safe-connected:index:our-city---smart-safe-connected"/>
+    <file name="touchswipe.js" crc="4075097462" ref="research---smart-safe-connected:index:our-city---smart-safe-connected"/>
   </folder>
   <folder name="images">
     <file name="lsu9584 downtown baton rouge.jpg" crc="3884916211" ref="index">
@@ -53,6 +53,9 @@
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
       <caption webpage="index" alt=""/>
+      <caption webpage="research---smart-safe-connected" alt=""/>
+      <caption webpage="research---smart-safe-connected" alt=""/>
+      <caption webpage="research---smart-safe-connected" alt=""/>
     </file>
     <file name="lsu9584 downtown baton rouge-u644-fr.jpg" crc="3965298629" ref="index"/>
     <file name="lsu3640 baton rouge aerial.jpg" crc="3861848732" ref="our-city---smart-safe-connected">
@@ -71,7 +74,8 @@
     <file name="pasted image 1858x1021-u60902-fr2.jpg" crc="3802807958" ref="our-city---smart-safe-connected"/>
     <file name="vis-u32762-fr.png" crc="108143029" ref="our-city---smart-safe-connected"/>
     <file name="car1-u34143-fr.jpg" crc="3985483678" ref="research---smart-safe-connected"/>
-    <file name="vis.jpg" crc="229008568" ref="research---smart-safe-connected">
+    <file name="vis.jpg" crc="494621582" ref="research---smart-safe-connected">
+      <caption webpage="research---smart-safe-connected" alt=""/>
       <caption webpage="research---smart-safe-connected" alt=""/>
       <caption webpage="research---smart-safe-connected" alt=""/>
     </file>
@@ -101,7 +105,8 @@
       <caption webpage="research---smart-safe-connected" alt=""/>
     </file>
     <file name="pasted image 300x300-u93167-fr.jpg" crc="3931342445" ref="research---smart-safe-connected"/>
-    <file name="lsu5529 shaw center for the arts.jpg" crc="4010286749" ref="research---smart-safe-connected">
+    <file name="lsu5529 shaw center for the arts.jpg" crc="4167892267" ref="research---smart-safe-connected">
+      <caption webpage="research---smart-safe-connected" alt=""/>
       <caption webpage="research---smart-safe-connected" alt=""/>
       <caption webpage="research---smart-safe-connected" alt=""/>
     </file>
@@ -123,7 +128,6 @@
     <file name="pasted image 1500x2100-u93540-fr2.jpg" crc="100307647" ref="research---smart-safe-connected"/>
     <file name="pasted image 1500x2100-u93545-fr2.jpg" crc="4082839942" ref="research---smart-safe-connected"/>
     <file name="car1-u34143-fr3.jpg" crc="187243568" ref="research---smart-safe-connected"/>
-    <file name="vis-u71124-fr.jpg" crc="3791804424" ref="research---smart-safe-connected"/>
     <file name="pasted image 425x638-u342243.png" crc="3877068162" ref="research---smart-safe-connected"/>
     <file name="pasted image 600x600-u34139-fr3.jpg" crc="100248336" ref="research---smart-safe-connected"/>
     <file name="pasted image 1500x2100-u34187-fr3.jpg" crc="98016916" ref="research---smart-safe-connected"/>
@@ -132,13 +136,26 @@
     <file name="smartcity_pic1-u93172-fr2.png" crc="462487100" ref="research---smart-safe-connected"/>
     <file name="pasted image 300x300-u93167-fr3.jpg" crc="384448520" ref="research---smart-safe-connected"/>
     <file name="pasted image 1600x1067-u93174-fr3.jpg" crc="131951573" ref="research---smart-safe-connected"/>
-    <file name="lsu5529 shaw center for the arts-u93550-fr.jpg" crc="3884433579" ref="research---smart-safe-connected"/>
     <file name="pasted image 1500x2100-u93538-fr3.jpg" crc="4027997937" ref="research---smart-safe-connected"/>
     <file name="pasted image 1500x2100-u93539-fr3.jpg" crc="243638361" ref="research---smart-safe-connected"/>
     <file name="pasted image 1500x2100-u93540-fr3.jpg" crc="4016997080" ref="research---smart-safe-connected"/>
     <file name="pasted image 1500x2100-u93545-fr3.jpg" crc="451247148" ref="research---smart-safe-connected"/>
+    <file name="ssc_logo.png" crc="3972286768" seo="true" ref="index:our-city---smart-safe-connected:research---smart-safe-connected">
+      <caption webpage="index" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="our-city---smart-safe-connected" alt=""/>
+      <caption webpage="our-city---smart-safe-connected" alt=""/>
+      <caption webpage="research---smart-safe-connected" alt=""/>
+      <caption webpage="research---smart-safe-connected" alt=""/>
+    </file>
+    <file name="logo_small.png" crc="475891529" seo="true" ref="index:our-city---smart-safe-connected:research---smart-safe-connected">
+      <caption webpage="index" alt=""/>
+      <caption webpage="our-city---smart-safe-connected" alt=""/>
+      <caption webpage="research---smart-safe-connected" alt=""/>
+    </file>
+    <file name="blank.gif" crc="4208392903" ref="index:our-city---smart-safe-connected:research---smart-safe-connected"/>
   </folder>
-  <file name="index.html" crc="4085031808" seo="true" mt="1532021692460" redirect="true"/>
-  <file name="our-city---smart-safe-connected.html" crc="334607125" seo="true" mt="1532021692460" redirect="true"/>
-  <file name="research---smart-safe-connected.html" crc="3899349942" seo="true" mt="1532021692460" redirect="true"/>
+  <file name="index.html" crc="3910120152" seo="true" mt="1532023026050" redirect="true"/>
+  <file name="our-city---smart-safe-connected.html" crc="3909098547" seo="true" mt="1532023026050" redirect="true"/>
+  <file name="research---smart-safe-connected.html" crc="3860232713" seo="true" mt="1532023026050" redirect="true"/>
 </manifest>

@@ -5,18 +5,36 @@
     <lastmod>2018-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://smartcity.lsu.edu/images/ssc_logo.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://smartcity.lsu.edu/images/logo_small.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>http://smartcity.lsu.edu/our-city---smart-safe-connected.html</loc>
     <lastmod>2018-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://smartcity.lsu.edu/images/ssc_logo.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://smartcity.lsu.edu/images/logo_small.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>http://smartcity.lsu.edu/research---smart-safe-connected.html</loc>
     <lastmod>2018-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <image:image>
+      <image:loc>http://smartcity.lsu.edu/images/ssc_logo.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>http://smartcity.lsu.edu/images/logo_small.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>http://smartcity.lsu.edu/assets/revision7.pdf</loc>
