@@ -10,9 +10,13 @@
 }
 
 #dropdownMenuLink{
-  padding-left:30px;
-  padding-right:30px;
 }
+
+/*
+.example {
+  background-color: #943A3B;
+}
+*/
 
 .noPad {
   padding: 0 ! important;
