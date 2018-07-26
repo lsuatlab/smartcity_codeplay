@@ -113,7 +113,7 @@ body {background-color: #F3F3F3;}
 
 .dropdown-custom {
 		background: white;
-		color: grey;
+		color:#7F7F7F;
 		border-radius: 0;
 		font-size: 22px;
 		font-family: "Bebas Kai";
@@ -125,8 +125,8 @@ body {background-color: #F3F3F3;}
 }
 
 .dropdown-custom:active {
-		background: blue;
-		color: grey;
+		background: #7F7F7F;
+		color: white;
 }
 
 /*  Dropdown Items-text Cust */ 
@@ -136,7 +136,7 @@ body {background-color: #F3F3F3;}
   padding: 0.25rem 1.5rem;
   clear: both;
   font-weight: 400;
-  color: grey;
+  color:#7F7F7F;
   text-align: inherit;
   white-space: nowrap;
   background: white;
@@ -145,7 +145,7 @@ body {background-color: #F3F3F3;}
   font-family: "Bebas Kai"
 }
 .dropdown-item_cust:link {
-	color: grey;
+	color: #7F7F7F;
 	
 }
 
@@ -167,12 +167,15 @@ body {background-color: #F3F3F3;}
 .bigtext {
 	font-size:42px;
 	font-family: "Bebas Kai";
- 	color: grey;
+ 	color: #7F7F7F;
+}
+.bigtextwhite{
+	color:white;
 }
 .smallertext {
 	font-size:18px;
 	font-family: "Carrois Gothic";
- 	color: grey;
+ 	color: #7F7F7F;
 }
 
 
@@ -182,17 +185,19 @@ body {background-color: #F3F3F3;}
 
 
 .textpadding{
+	padding-top: 2px;
+	padding-bottom: 2px;
 	
 }
 
 .redblock{
-	background-color: darkred;
+	background-color: #993434;
 	width:100%;
 }
 
 .redblockwrap{
-	background-color:darkred!important;
-	height:40px;
+	background-color: #993434;
+	height:50px;
 	width:100%;
 }
 
@@ -269,7 +274,9 @@ body {background-color: #F3F3F3;}
 	height: 100px;
 }
 .burger-cust {
-			background: -webkit-gradient(linear, center top, center bottom, from(#993434), color-stop(100%, #751616));
+	background: -webkit-gradient(linear, center top, center bottom, from(#993434), color-stop(100%, #751616));
 	border-radius: 0;
-
+}
+.nomargin{
+		margin: 0;
 }
