@@ -1,0 +1,275 @@
+/*if you need to make any style changes do it here 
+  this code should override the base bootstrap stuff*/
+
+/*I tried not to write much css to style the webpage, 
+  instead my css is there to add in some functionality */
+
+/*Custom Background Color*/
+body {background-color: #F3F3F3;}
+
+/*this code here enables hover functionality for dropdown menus */
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+}
+
+
+.headerImg {
+	width: 100%; 
+	height: 50vh; 
+	display:inline-block;
+	
+	background: url(../../images/misc/downtownBR.jpg);
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grayBox {
+	padding-top: 100px;
+}
+.whiteBox {
+	background-color: #FFFFFF;
+	padding: 0;
+}
+
+#gapRight {
+	margin-right: 100px ! important;
+}
+
+.thumbnail {
+    position: relative;
+    top: -25%;
+    left: -33%;
+}
+
+.imageOverlay {
+  width:300px; 
+  height:300px; 
+  margin-left: 100px;
+}
+
+.imageCenter {
+  width:350px; 
+  height:350px; 
+  margin:100px;
+}
+
+.headerText {
+    position: absolute;
+    top: 5%;
+    left: 77%;
+    width: 50%;
+    color: white;
+
+}
+
+.bodyText {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 100%;
+    max-width: 80%;
+    padding-left: 25vw;
+}
+
+#AboutUs {
+  position: absolute;
+    top: 7%;
+    left: 75%;
+    width: 50%;
+}
+
+#AboutUsText {
+  position: absolute;
+    top: 19%;
+    left: 50%;
+    width: 100%;
+    max-width: 75%;
+    padding-left: 25vw;
+}
+
+/* uncomment this out for troubleshooting help
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+*/
+
+/*-- jack custom css */
+.navbar-height-cust{
+ height:55px;
+}
+.btn-cust{
+	padding: 0;
+	margin: 0;
+}
+
+.dropdown-custom {
+		background: white;
+		color: grey;
+		border-radius: 0;
+		font-size: 22px;
+		font-family: "Bebas Kai";
+}
+
+.dropdown-custom:hover {
+		background: -webkit-gradient(linear, center top, center bottom, from(#993434), color-stop(100%, #751616));
+		color: white;
+}
+
+.dropdown-custom:active {
+		background: blue;
+		color: grey;
+}
+
+/*  Dropdown Items-text Cust */ 
+.dropdown-item_cust {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: grey;
+  text-align: inherit;
+  white-space: nowrap;
+  background: white;
+  border: 0;
+  font-size: 18px;
+  font-family: "Bebas Kai"
+}
+.dropdown-item_cust:link {
+	color: grey;
+	
+}
+
+.dropdown-item_cust:hover, .dropdown-item_cust:focus {
+  color: white;
+  text-decoration: none;
+	background: -webkit-gradient(linear, center top, center bottom, from(#7F7F7F), color-stop(100%, #545454)); 
+}
+
+.dropdown-item_cust.active, .dropdown-item_cust:active {
+  color: white;
+  text-decoration: none;
+  background-color: linear-gradient(#7F7F7F, #545454);
+}
+
+
+/* Dropdown item cust end */
+
+.bigtext {
+	font-size:42px;
+	font-family: "Bebas Kai";
+ 	color: grey;
+}
+.smallertext {
+	font-size:18px;
+	font-family: "Carrois Gothic";
+ 	color: grey;
+}
+
+
+.whiteBoxHeight{
+	height: 50vh;
+}
+
+
+.textpadding{
+	
+}
+
+.redblock{
+	background-color: darkred;
+	width:100%;
+}
+
+.redblockwrap{
+	background-color:darkred!important;
+	height:40px;
+	width:100%;
+}
+
+/*Formspree Styling*/
+.formspree_input {
+	color: #7F7F7F;
+	border-width: 1px;
+	min-height: 42px;
+	font-family: "Carrois Gothic";
+	z-index: 66;
+	background-color: #FFFFFF;
+	position: relative;
+	font-size: 19px;
+	border-color: #993434;
+	border-style: solid;
+	border-radius: 3px;
+	font-weight: 400;
+	line-height: 37px;
+}
+
+.formspree_input:focus{
+	color: black;
+	background-color: #F6F6F6;
+}
+.formspree_input_override{
+	width: 100%;
+	
+}
+.formspree_button {
+}
+#buttonu90603 {
+	color: #7F7F7F;
+	border-width: 1px;
+	min-height: 42px;
+	font-family: "Carrois Gothic";
+	z-index: 66;
+	background-color: #FFFFFF;
+	position: relative;
+	font-size: 19px;
+	border-color: #993434;
+	border-style: solid;
+	border-radius: 3px;
+	font-weight: 400;
+	line-height: 37px;
+	font-color: #993434;
+
+}
+#buttonu90603:hover {
+	background: -webkit-gradient(linear, center top, center bottom, from(#993434), color-stop(100%, #751616));
+	background: -webkit-linear-gradient(top, #993434, #751616 100%);
+	background: linear-gradient(to bottom, #993434, #751616 100%);
+
+	color: white;
+}
+#buttonu90603.ButtonSelected {
+	background: -webkit-gradient(linear, center top, center bottom, from(#993434), color-stop(100%, #751616));
+	background: -webkit-linear-gradient(top, #993434, #751616 100%);
+	background: linear-gradient(to bottom, #993434, #751616 100%);
+
+	color: white;
+
+}.formspree_div {
+	padding-Left: 1%;
+}
+.formspree_div2 {
+	padding-top: 2%;
+	padding-bottom: 2%;
+	height: 20%;
+}
+/*End formspree styling*/
+
+.bottomBox{
+	background-color: #FFFFFF;
+	height: 100px;
+}
+.burger-cust {
+			background: -webkit-gradient(linear, center top, center bottom, from(#993434), color-stop(100%, #751616));
+	border-radius: 0;
+
+}
