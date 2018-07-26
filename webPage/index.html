@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Smart City</title>
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -14,105 +14,153 @@
 
 	</head>
 	<body>
-		<div>
-			<!-- responsive navbar here -->
-			<nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
-				<!-- here's where we make the stuff to go in the upper left -->
-				<a class="navbar-brand" href="#">
-					<img src="images/logos/logoWithText.png" class="navbar-brand mr-auto" width="269" height="71" href="#" alt="Red minimalist cityscape with text Smart Safe Connected Baton Rouge following. Serves as logo of site">
-				</a>
+		<div class="container-fluid noPad">
+			<div class="row">
+				<div class="col-12">
+				  <nav class="navbar navbar-expand-md navbar-light bg-light">
+				  	<!-- big logo -->
+				    <a class="navbar-brand d-none d-sm-block col-3" href="#">
+				      <img src="images/logos/logoWithText.png" class="navbar-brand mr-auto" width="269" height="71" href="#" alt="Red minimalist cityscape with text Smart Safe Connected Baton Rouge following. Serves as logo of site">
+				    </a>
+				    <!-- mobile logo -->
+				    <a class="navbar-brand d-block d-sm-none col-3" href="#">
+				      <img src="images/logos/logoSmall.png" class="navbar-brand mr-auto" width="71" height="71" href="#" alt="Red minimalist cityscape with text Smart Safe Connected Baton Rouge following. Serves as logo of site">
+				    </a>
 
-				<!-- collapse button for menu on smaller screens -->
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-	  			<span class="navbar-toggler-icon"></span>
-	  		</button>
+				    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				      <span class="navbar-toggler-icon"></span>
+				    </button>
+				    <div class="collapse navbar-collapse col-9" id="navbarNavAltMarkup">
+				      <div class="navbar-nav ml-auto">
+				        <div class="nav-item dropdown">
+				          <a class="nav-link dropdown-toggle active" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				            About Us
+				            <!-- add this line in for the active element for text-only broswers -->
+				            <span class="sr-only">(current)</span>
+				          </a>
+				          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+				            <a class="dropdown-item" href="#">What We Do</a>
+				            <a class="dropdown-item" href="#">Contact Us</a>
+				          </div>
+				        </div>
 
-		    <div class="collapse navbar-collapse" id="navbarCollapse">
+				        <div class="nav-item dropdown">
+				          <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				            Our City
+				          </a>
+				          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+				            <a class="dropdown-item" href="#">Crime Map Visualization</a>
+				            <a class="dropdown-item" href="#">Traffic Visualization</a>
+				          </div>
+				        </div>
 
-		      <!-- ml-auto makes right hugging navigation link -->
-		      <ul class="nav navbar-nav ml-auto">
-
-		      	<!-- so you could probably use the class nav-item for thes but I used the dropdown show class instead  -->
-		        <li class="nav-item">
-		        	<div class="dropdown show">
-							  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							    About Us
-							  </a>
-
-							  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-							    <a class="dropdown-item" href="#">What We Do</a>
-							    <a class="dropdown-item" href="#">Contact Us</a>
-							  </div>
-							</div>
-						</li>
-
-		        <li class="nav-item">
-		        	<div class="dropdown show">
-							  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							    Our City
-							  </a>
-
-							  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-							    <a class="dropdown-item" href="#">Crime Map Visualization</a>
-							    <a class="dropdown-item" href="#">Traffic Visualization</a>
-							  </div>
-							</div>
-						</li>
-
-		        <li class="nav-item">
-		        	<div class="dropdown show">
-							  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							    Research
-							  </a>
-
-							  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-							    <a class="dropdown-item" href="#">Big Data + AI</a>
-							    <a class="dropdown-item" href="#">Community Engagement</a>
-							    <a class="dropdown-item" href="#">Social Science</a>
-							    <a class="dropdown-item" href="#">Data Submission</a>
-							  </div>
-							</div>
-						</li>
-		      </ul>
-		    </div>
-			</nav>
+				        <div class="nav-item dropdown">
+				          <a class="nav-link dropdown-toggle" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				            Research
+				          </a>
+				          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+				            <a class="dropdown-item" href="#">Big Data + AI</a>
+				            <a class="dropdown-item" href="#">Community Engagement</a>
+				            <a class="dropdown-item" href="#">Social Science</a>
+				            <a class="dropdown-item" href="#">Data Submission</a>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				  </nav>
+			  </div>
+			</div>
 
 			<!-- this here makes the big eye-grabbin' image -->
-			<div>
-				<img class="img-responsive headerImg" src="images/misc/downtownBR.jpg" alt="header image of downtown Baton Rouge"> 
+			<div class="row">
+				<div class="col-12 noPad">
+					<img class="img-fluid" src="images/misc/downtownBR.jpg" alt="header image of downtown Baton Rouge"> 
+				</div>
 			</div>
 
 			<!-- pic with words to the right -->
-			<div class="whiteBox thumbnail text-center" style="width: 100%; height: 500px;">
-				<img src="images/misc/capBuild.jpg" alt="picture of Baton Rouge Capital Building" class="img-responsive imageCenter">
+			<div class="row">
+				<div class="d-none d-lg-block col-lg-4">
+					<img src="images/misc/capBuild.jpg" alt="picture of Baton Rouge Capital Building" class="img-fluid">
+				</div>
 
-				<h1 id="AboutUs">About Us</h1>
+				<div class="col-12 col-lg-7 offset-lg-1">
+					<div class="row">
+						<div class="col-12">
+							<h1>About Us</h1>
+						</div>
+					</div>
 
-				<div id="AboutUsText">
-        	<p>
-        		We plan to build a multidisciplinary team, including not only academic researchers but also various community stakeholders, to develop a cross-sector partnership in order to create a research concept that will promote and employ S&CC technologies to tackle social and economic issues in a holistic manner. Particularly, we will (a) identify the current critical issues and existing infrastructure related with transportation and crime, (b) build a cross-sector partnership of many stakeholders who share a common vision, and (c) put the team together with a singular focus and use S&CC technologies to address our most dire challenges: transportation and crime.  The community-oriented web portal will also be developed and deployed by leveraging the state-of-the-art Web technologies, and open to public. The proposed web portal will enable research collaborators and community stakeholders to share information and outcomes.
-        	</p>
-        </div>
-			</div>
-
-			<div class="grayBox" style="width: 100%; height: 500px;">
-				<div class="whiteBox" style=" width: 100%; height: 300px">
-					<img src="images/misc/headerBar.png" alt="Header bar" style="width:100%; height:75px;">
-	    		<div class="thumbnail text-center">
-		        <img src="images/misc/replaceMe.png" alt="Replace this image later" class="img-responsive imageOverlay">
-		        <div class="headerText">
-		            <h2>Events</h2>
-		        </div>
-		        <div class="bodyText">
+					<div class="row">
+						<div class = "col-12">
 		        	<p>
-		        		LSU researchers across campus are working on solving public safety and transportation challenges using Smart City methods. We invite you to join us to learn about these capabilities, and explore how we as a city and region can pursue shared Smart City initiatives.
+		        		We plan to build a multidisciplinary team, including not only academic researchers but also various community stakeholders, to develop a cross-sector partnership in order to create a research concept that will promote and employ S&CC technologies to tackle social and economic issues in a holistic manner. Particularly, we will (a) identify the current critical issues and existing infrastructure related with transportation and crime, (b) build a cross-sector partnership of many stakeholders who share a common vision, and (c) put the team together with a singular focus and use S&CC technologies to address our most dire challenges: transportation and crime.  The community-oriented web portal will also be developed and deployed by leveraging the state-of-the-art Web technologies, and open to public. The proposed web portal will enable research collaborators and community stakeholders to share information and outcomes.
 		        	</p>
 		        </div>
-		    	</div>
-	  		</div>
+		      </div>
+				</div>
+			</div>
+
+			<!-- grey divider -->
+			<div class="row">
+				<div class="col-12">
+					<div class="grayBox"></div>
+				</div>
+			</div>
+
+			<!-- divs for special overlay box -->
+			<div class="row">
+				<div class="d-none d-lg-block col-lg-1" style="padding-right: 0;">
+					<div class= "redBox"></div>
+				</div>
+
+				<div class="d-none d-lg-block col-lg-3" style="padding: 0;">
+					<img src="images/misc/replaceMe.png" alt="Replace this image later" class="img-fluid" style="width: 100%; height: 100%; padding: 0;">
+				</div>
+
+				<!--this div is the same as the one that follows in terms of content
+						this one is there to for padding issues. To get things to line up 
+						with the picture, I needed to remove padding but that looks awful 
+						without the pictures so my quick fix is too different divs -->
+				<div class="d-block d-lg-none col-12">
+					<div class="row">
+						<div class="col-12">
+							<div class= "redBox" style="color: white; text-align: center;">
+								<h1>Events</h1>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12">
+							<p>
+		        		LSU researchers across campus are working on solving public safety and transportation challenges using Smart City methods. We invite you to join us to learn about these capabilities, and explore how we as a city and region can pursue shared Smart City initiatives.
+		        	</p>
+						</div>
+					</div>					
+				</div>
+
+				<!-- div for larger displays -->
+				<div class="d-none d-lg-block col-lg-8" style="padding-left: 0;">
+					<div class="row">
+						<div class="col-12">
+							<div class= "redBox" style="color: white; text-align: center;">
+								<h1>Events</h1>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-12">
+							<p>
+		        		LSU researchers across campus are working on solving public safety and transportation challenges using Smart City methods. We invite you to join us to learn about these capabilities, and explore how we as a city and region can pursue shared Smart City initiatives.
+		        	</p>
+						</div>
+					</div>					
+				</div>
+
 			</div>
 		</div>
-
 
 		<!-- scripts -->
 		<!-- popper.js -->
