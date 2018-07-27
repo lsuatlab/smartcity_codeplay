@@ -52,12 +52,18 @@ function init() {
   var object;
 
   //remove this in later builds, adds flair by randomizing colors for crimes
+  Object.keys(colors).forEach(function(key) {
+    colors[key] = Math.random() * 0xffffff;
+  })
+
+  //code below for color gradient rather than randomized color
+  /*
   var grad = gradient("#831E98","#CEE227", Object.keys(colors).length)
   var tempCounter = 0;
   console.log(grad);
   Object.keys(colors).forEach(function(key) {
   	colors[key] = grad[tempCounter++];
-  })
+  }) */
 
   image.addEventListener('load', function(event) {
 
