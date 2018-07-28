@@ -3,6 +3,9 @@
 
 /*I tried not to write much css to style the webpage, 
   instead my css is there to add in some functionality */
+/*custom background color*/
+body {background-color: #F3F3F3;}
+
 
 /*this code here enables hover functionality for dropdown menus */
 .dropdown:hover>.dropdown-menu {
@@ -23,9 +26,8 @@
 }
 
 .grayBox {
-	background-color: #EAEAEA;
   width: 100%;
-	height: 100px;
+  height: 70px;
 }
 
 .redBox {
@@ -42,3 +44,55 @@
   outline: solid #f00 1px !important;
 }
 */
+
+
+/* Jack's Custom CSS*/
+/*collapsed/mobile Burger styling*/
+
+.whiteBox {
+	background-color: #FFFFFF;
+	box-shadow: 0px 1px 10px 1px rgba( 0, 0, 0, 0.15);
+}
+
+.redblock{
+	background-color: #993434;
+}
+
+.burger-cust {
+	background: -webkit-gradient(linear, center top, center bottom, from(#993434), color-stop(100%, #751616));
+	border-radius: 0;
+	height: 100%;
+}
+
+.Headerbutton-cust {
+		background: white;
+		color:#7F7F7F;
+		border-radius: 0;
+		font-size: 22px;
+		font-family: "Bebas Kai";
+}
+
+.Headerbutton-cust:hover {
+		background: -webkit-gradient(linear, center top, center bottom, from(#993434), color-stop(100%, #751616));
+		color: white;
+}
+
+.Headerbutton-cust:active {
+		background: #7F7F7F;
+		color: white;
+}
+
+.bigtext {
+	font-size:42px;
+	font-family: "Bebas Kai";
+ 	color: #7F7F7F;
+}
+.bigtextwhite{
+	color:white;
+}
+.smallertext {
+	font-size:18px;
+	font-family: "Carrois Gothic";
+ 	color: #7F7F7F;
+}
+
