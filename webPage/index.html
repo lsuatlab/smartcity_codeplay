@@ -16,7 +16,7 @@
 	<body>
 		<div class="container-fluid noPad">
 			<div class="row">
-				<div class="col-12">
+				<div class="col-12 noPad">
 				  <nav class="navbar navbar-expand-md navbar-light" style="padding-top: 0; padding-bottom: 0;">
 				  	<!-- big logo -->
 				    <a class="navbar-brand d-none d-sm-block col-3 noPad" href="#">
@@ -32,8 +32,8 @@
 				    </button>
 				    <div class="collapse navbar-collapse col-9" id="navbarNavAltMarkup" style="height: 100%; padding:0;">
 				      <div class="navbar-nav ml-auto col-6">
-				        <div class="nav-item dropdown">
-				          <a class="nav-link example Headerbutton-cust" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				        <div class="nav-item dropdown col-4 noPad">
+				          <a class="nav-link example Headerbutton-cust text-center" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				            About Us
 				            <!-- add this line in for the active element for text-only broswers -->
 				            <span class="sr-only">(current)</span>
@@ -44,8 +44,8 @@
 				          </div>
 				        </div>
 
-				        <div class="nav-item dropdown">
-				          <a class="nav-link Headerbutton-cust" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				        <div class="nav-item dropdown col-4 noPad">
+				          <a class="nav-link Headerbutton-cust text-center" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				            Our City
 				          </a>
 				          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
@@ -54,8 +54,8 @@
 				          </div>
 				        </div>
 
-				        <div class="nav-item dropdown ">
-				          <a class="nav-link Headerbutton-cust" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				        <div class="nav-item dropdown col-4 noPad">
+				          <a class="nav-link Headerbutton-cust text-center" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				            Research
 				          </a>
 				          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
@@ -175,22 +175,30 @@
 					</div>
 			    </div>
 				<div class="row">
-					<div class="col-12">
+					<div class="col-12" style="padding-bottom: 5px;">
 					<div class="col-10 offset-1">
  					 <!-- custom -->
 					  <form action="https://formspree.io/sbentl4@lsu.edu"
       method="POST">
 
-    			<input name="Name" type="text" class="formspree_input col-4" placeholder="  Name">
-				<span class="formspree_div">
-    			<input name="Email" type="email" class="formspree_input col-4" placeholder="Email">
-				</span>
+				<div class="row">
+					<div class="col-4">
+    					<input name="Name" type="text" class="formspree_input" placeholder="  Name">
+					</div>
+					<div class="col-4">
+    					<input name="Email" type="email" class="formspree_input" placeholder="Email">
+					</div>
+				</div>
 					
-				<div class="formspree_div2">
-				<textarea name="Message" class="formspree_input formspree_input_override" placeholder="Your Message"></textarea>		
+				<div class="row" style="padding-top: 1%; padding-bottom: 1%;">
+					<div class="col-12">
+						<textarea name="Message" class="formspree_input formspree_input_override col-12" placeholder="Your Message"></textarea>	
+					</div>
 				</div> 		 
-				<div>
-					<input type="submit" id="buttonu90603" 	class="formspree_button col-4"  value="Send">
+				<div class="row">
+					<div class="col-4">
+						<input type="submit" 	class="pagebutton col-12"  value="Send">
+					</div>
 					
 				</div>
 			</form>
@@ -200,8 +208,135 @@
 			  </div>	
 			
 			</div>
+			
+									<!-- grey divider -->
+			<div class="row">
+				<div class="col-12 noPad">
+					<div class="grayBox"></div>
+				</div>
+			</div>
+			
+				<div class="row" style="padding-top: 10px; background-color: #FFFFFF;">
+	  				<p class="smallertext align-self-center col-md-6 offset-md-3 textpadding text-center" style="padding-top: 2px; padding-bottom: 2px;">
+					© 2018 LSU Center for Computation and Technology
+
+					Provide Website Feedback Accessibility Statement</p>
+	  			</div>
+			
+			<!-- grey divider -->
+			<div class="row">
+				<div class="col-12 noPad">
+					<div class="grayBox"></div>
+				</div>
+			</div>
+			
+	<div class="whiteBox col-12 row noPad no-gutters" style="padding-bottom: 5px;">
+		<div class="col-12 textpadding row noPad no-gutters">
+		  <h1 class="bigtext text-center redblock bigtextwhite col-12 noPad" id="AboutEvents">Events</h1>
+		</div>	
+			<div class="col-10 offset-1 row">
+        	<p class="text-center smallertext">
+        		We plan to build a multidisciplinary team, including not only academic researchers but also various community stakeholders, to develop a cross-sector partnership in order to create a research concept that will promote and employ S&CC technologies to tackle social and economic issues in a holistic manner. Particularly, we will (a) identify the current critical issues and existing infrastructure related with transportation and crime, (b) build a cross-sector partnership of many stakeholders who share a common vision, and (c) put the team together with a singular focus and use S&CC technologies to address our most dire challenges: transportation and crime.  The community-oriented web portal will also be developed and deployed by leveraging the state-of-the-art Web technologies, and open to public. The proposed web portal will enable research collaborators and community stakeholders to share information and outcomes.
+        	</p>
+        	</div>	
+	<div class="row col-12 no-gutters" style="padding-bottom: 5px;">
+			<div class="col-6 d-block">
+				<div class="row">
+					<div class="col-3 no-gutters d-block offset-1 align-self-center">
+						<img src="images/people/profDerrick.jpg" class="col-12">
+					</div>
+				
+					<div class="col-5 d-block offset-1">
+						<h3 class="text-center" style="font-family: 'Carrois Gothic'; color:darkred;">Derick Ostrenko</h3>
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">LSU
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">dostrenko@lsu.edu
+						225-578-5411
+						Faculty Page
+						</p>
+						</p>
+					</div>
+				</div>
+			</div>	
+			<div class="col-6 d-block">
+				<div class="row">
+					<div class="col-3 no-gutters d-block offset-1 align-self-center">
+						<img src="images/people/profDerrick.jpg" class="col-12">
+					</div>
+				
+					<div class="col-5 d-block offset-1">
+						<h3 class="text-center" style="font-family: 'Carrois Gothic'; color:darkred;">Derick Ostrenko</h3>
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">LSU
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">dostrenko@lsu.edu
+						225-578-5411
+						Faculty Page
+						</p>
+						</p>
+					</div>
+				</div>
+			</div>	
+		</div> <!--End Individual row-->
+	<div class="row col-12 no-gutters" style="padding-bottom: 5px;">
+			<div class="col-6 d-block">
+				<div class="row">
+					<div class="col-3 no-gutters d-block offset-1 align-self-center">
+						<img src="images/people/profDerrick.jpg" class="col-12">
+					</div>
+				
+					<div class="col-5 d-block offset-1">
+						<h3 class="text-center" style="font-family: 'Carrois Gothic'; color:darkred;">Derick Ostrenko</h3>
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">LSU
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">dostrenko@lsu.edu
+						225-578-5411
+						Faculty Page
+						</p>
+						</p>
+					</div>
+				</div>
+			</div>	
+			<div class="col-6 d-block">
+				<div class="row">
+					<div class="col-3 no-gutters d-block offset-1 align-self-center">
+						<img src="images/people/profDerrick.jpg" class="col-12">
+					</div>
+				
+					<div class="col-5 d-block offset-1">
+						<h3 class="text-center" style="font-family: 'Carrois Gothic'; color:darkred;">Derick Ostrenko</h3>
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">LSU
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">dostrenko@lsu.edu
+						225-578-5411
+						Faculty Page
+						</p>
+						</p>
+					</div>
+				</div>
+			</div>	
+		</div> <!--End Individual row-->
+		
+	  </div>
+	  
+	
+				<!-- grey divider -->
+			<div class="row">
+				<div class="col-12 noPad">
+					<div class="grayBox"></div>
+				</div>
+			</div>
+
+<!-- grey divider -->
+			<div class="row">
+				<div class="col-12 noPad">
+					<div class="grayBox"></div>
+				</div>
+			</div>
+
+			
+
+			
+			
 		</div>
 
+		
+		
 		<!-- scripts -->
 		<!-- popper.js -->
 		<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
