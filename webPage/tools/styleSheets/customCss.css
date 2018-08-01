@@ -140,4 +140,18 @@ body {background-color: #F3F3F3;}
 
 	color: white;
 
+}.dropdownButton {
+		background: linear-gradient(to bottom, #7F7F7F, #707070 100%);
+		color: white;
+		font-size: 22px;
+		font-family: "Bebas Kai";
+		
+}
+.dropdownButton:hover {
+		background: -webkit-gradient(linear, center top, center bottom, from(#993434), color-stop(100%, #751616));
+		color: white;
+}
+.dropdownButton:active {
+		background: -webkit-gradient(linear, center top, center bottom, from(#993434), color-stop(100%, #751616));
+		color: white;
 }
