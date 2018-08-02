@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Smart City</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!--CSS stuff here -->
+
+		<link rel="stylesheet" href="tools/styleSheets/bootstrap/bootstrap.css">
+		<link rel="stylesheet" href="tools/styleSheets/customCss.css">
+  	<!-- scripts -->
+
+	</head>
+	<body>
+		<div class="container-fluid noPad">
+			<div class="row">
+				<div class="col-12 noPad">
+				  <nav class="navbar navbar-expand-md navbar-light" style="padding-top: 0; padding-bottom: 0;">
+				  	<!-- big logo -->
+				    <a class="navbar-brand d-none d-sm-block col-3 noPad" href="#">
+				      <img src="images/logos/logoWithText.png" class="navbar-brand mr-auto" height="50" href="#" alt="Red minimalist cityscape with text Smart Safe Connected Baton Rouge following. Serves as logo of site">
+				    </a>
+				    <!-- mobile logo -->
+				    <a class="navbar-brand d-block d-sm-none col-3 noPad" href="#">
+				      <img src="images/logos/logoSmall.png" class="navbar-brand mr-auto" width="71" height="71" href="#" alt="Red minimalist cityscape with text Smart Safe Connected Baton Rouge following. Serves as logo of site">
+				    </a>
+
+<!--
+				    <button class="navbar-toggler burger-cust" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				      <span class="navbar-toggler-icon"></span>
+				    </button>
+-->
+					<button class="navbar-toggler burger-cust col-2" type="button" data-toggle="collapse" data-target="#NavBurger" aria-controls="NavBurger" aria-expanded="false" aria-label="Toggle navigation bar">
+
+         			 <span class="navbar-toggler-icon"></span>
+       			    </button>
+					  
+				    <div class="d-none d-lg-block collapse navbar-collapse col-9" id="navbarNavAltMarkup" style="height: 100%; padding:0;">
+				      <div class=" navbar-nav ml-auto col-6 ">
+				        <div class="nav-item dropdown col-4 noPad">
+				          <a class="nav-link example Headerbutton-cust text-center" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				            About Us
+				            <!-- add this line in for the active element for text-only broswers -->
+				            <span class="sr-only">(current)</span>
+				          </a>
+				          <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="dropdownMenuLink">
+				            <a class="dropdown-item_cust" href="#">What We Do</a>
+				            <a class="dropdown-item_cust" href="#">Contact Us</a>
+				          </div>
+				        </div>
+
+				        <div class="nav-item dropdown col-4 noPad">
+				          <a class="nav-link Headerbutton-cust text-center" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				            Our City
+				          </a>
+				          <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="dropdownMenuLink">
+				            <a class="dropdown-item_cust" href="#">Crime Map Visualization</a>
+				            <a class="dropdown-item_cust" href="#">Traffic Visualization</a>
+				          </div>
+				        </div>
+
+				        <div class="nav-item dropdown col-4 noPad">
+				          <a class="nav-link Headerbutton-cust text-center" href="#" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				            Research
+				          </a>
+				          <div class="dropdown-menu dropdown-menu-right py-0" aria-labelledby="dropdownMenuLink">
+				            <a class="dropdown-item_cust" href="#">Big Data + AI</a>
+				            <a class="dropdown-item_cust" href="#">Community Engagement</a>
+				            <a class="dropdown-item_cust" href="#">Social Science</a>
+				            <a class="dropdown-item_cust" href="#">Data Submission</a>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
+				  </nav>
+					
+				<div class="row col-8 offset-4 noPad no-gutters collapse dropdown-custom" style="background-color: grey;" id="NavBurger" aria-expanded="false"  aria-labelledby="">
+  <!-- Link Section -->
+                  
+                  <a class="nav-link example text-center col-12 dropdownButton" href="#About">
+                    About Us
+                    <!-- add this line in for the active element for text-only broswers -->
+                    <span class="sr-only">(current)</span>
+                  </a>
+                  
+                  <a class="nav-link example text-center col-12 Headerbutton-cust" href="#">
+                    Events
+                    <!-- add this line in for the active element for text-only broswers -->
+                    <span class="sr-only">(current)</span>
+                  </a>
+                  
+                  <a class="nav-link example text-center col-12 Headerbutton-cust" href="#">
+                    Contact Us
+                    <!-- add this line in for the active element for text-only broswers -->
+                    <span class="sr-only">(current)</span>
+                  </a>
+  <!--			Our city section-->
+                  <a class="nav-link example text-center col-12 dropdownButton" href="#">
+                  Our City
+                  <!-- add this line in for the active element for text-only broswers -->
+                  <span class="sr-only">(current)</span>
+                  </a>
+                  
+                  <a class="nav-link example text-center col-12 Headerbutton-cust" href="#">
+                    Crime Map Visualization
+                    <!-- add this line in for the active element for text-only broswers -->
+                    <span class="sr-only">(current)</span>
+                  </a>
+                  
+                  <a class="nav-link example text-center col-12 Headerbutton-cust" href="#">
+                    Traffic Visualization
+                    <!-- add this line in for the active element for text-only broswers -->
+                    <span class="sr-only">(current)</span>
+                  </a>
+  <!--			Research section-->
+                  <a class="nav-link example text-center col-12 dropdownButton" href="#">
+                  Research
+                  <!-- add this line in for the active element for text-only broswers -->
+                  <span class="sr-only">(current)</span>
+                  </a>
+                  
+                  <a class="nav-link example text-center col-12 Headerbutton-cust" href="#">
+                    Big Data + Deep Learning
+                    <!-- add this line in for the active element for text-only broswers -->
+                    <span class="sr-only">(current)</span>
+                  </a>
+                  
+                  <a class="nav-link example text-center col-12 Headerbutton-cust" href="#">
+                    Community Engagement
+                    <!-- add this line in for the active element for text-only broswers -->
+                    <span class="sr-only">(current)</span>
+                  </a>
+                  <a class="nav-link example text-center col-12 Headerbutton-cust" href="#">
+                    Social Science
+                    <!-- add this line in for the active element for text-only broswers -->
+                    <span class="sr-only">(current)</span>
+                  </a>
+                  
+                  <a class="nav-link example text-center col-12 Headerbutton-cust" href="#">
+                    Data Submission
+                    <!-- add this line in for the active element for text-only broswers -->
+                    <span class="sr-only">(current)</span>
+                  </a>
+                  
+              </div>
+<!--					here-->
+			  </div>
+			</div>
+
+			<!-- this here makes the big eye-grabbin' image -->
+			<div class="row">
+				<div class="col-12 noPad bannerImg">
+					
+<!--					<img class="img-fluid" src="images/misc/downtownBR.jpg" style="height: 50vh; background-position: center;" alt="header image of downtown Baton Rouge"> -->
+				</div>
+			</div>
+
+			<!-- pic with words to the right -->
+		  <div class="row whiteBox">
+<div class="col-10 offset-1 ">
+		<div class="row">
+						<div class="col-12">
+						  <h1 class="bigtext text-center" style="padding-top: 1%;" name="About">Research </h1>
+						</div>
+	  </div>
+
+					<div class="row">
+						<div class = "col-12 ">
+		        	<p class="smallertext text-justify">
+		        		The goal of this S&CC planning proposal is to build a partnership between various Baton Rouge community stakeholders and a multidisciplinary team of academic researchers in order to develop research concepts that will promote and employ S&CC technologies to tackle the major factors affecting the economic progress of the region, by considering economic and social issues in a holistic manner.
+		        	</p>
+		        </div>
+		      </div>
+			</div>
+		  </div>
+			
+									<!-- grey divider -->
+		  <div class="row">
+				<div class="col-12 noPad">
+					<div class="grayBox"></div>
+				</div>
+			</div>
+			
+	<div class="whiteBox row" style="padding-bottom: 5px;">
+		
+		
+		<div class="col-12 textpadding row noPad no-gutters">
+		  <h1 class="bigtext text-center redblock bigtextwhite col-12 noPad" id="AboutEvents">Big Data + Deep Learning</h1>
+	  </div>	
+
+			 <div class="row">
+				<div class = "col-10 offset-1 ">
+		        	<p class="smallertext text-justify">
+		        		The goal of this S&CC planning proposal is to build a partnership between various Baton Rouge community stakeholders and a multidisciplinary team of academic researchers in order to develop research concepts that will promote and employ S&CC technologies to tackle the major factors affecting the economic progress of the region, by considering economic and social issues in a holistic manner.
+		        	</p>
+		        </div>
+		      </div>
+		
+	<div class="row col-12 no-gutters" style="padding-bottom: 35px;"> <!-- Row -->
+			<div class="col-6 d-block">
+				<div class="row">
+					<div class="col-3 no-gutters d-block offset-1 align-self-center">
+						<img src="images/people/profDerrick.jpg" class="col-12">
+					</div>
+				
+					<div class="col-5 d-block offset-2">
+						<h3 class="text-center" style="font-family: 'Carrois Gothic'; color:darkred;">Derick Ostrenko</h3>
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">LSU
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">dostrenko@lsu.edu
+						225-578-5411
+						Faculty Page
+						</p>
+						</p>
+					</div>
+				</div>
+			</div>	
+			<div class="col-6 d-block">
+				<div class="row">
+					<div class="col-3 no-gutters d-block offset-1 align-self-center">
+						<img src="images/people/profDerrick.jpg" class="col-12">
+					</div>
+				
+				  <div class="col-5 d-block offset-2">
+						<h3 class="text-center" style="font-family: 'Carrois Gothic'; color:darkred;">Derick Ostrenko</h3>
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">LSU
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">dostrenko@lsu.edu
+						225-578-5411
+						Faculty Page
+						</p>
+						</p>
+				  </div>
+				</div>
+			</div>	
+	</div> <!--End Individual row-->
+	<div class="row col-12 no-gutters" style="padding-bottom: 35px;"> <!-- Row -->
+			<div class="col-6 d-block">
+				<div class="row">
+					<div class="col-3 no-gutters d-block offset-1 align-self-center">
+						<img src="images/people/profDerrick.jpg" class="col-12">
+					</div>
+				
+					<div class="col-5 d-block offset-2">
+						<h3 class="text-center" style="font-family: 'Carrois Gothic'; color:darkred;">Derick Ostrenko</h3>
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">LSU
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">dostrenko@lsu.edu
+						225-578-5411
+						Faculty Page
+						</p>
+						</p>
+					</div>
+				</div>
+			</div>	
+			<div class="col-6 d-block">
+				<div class="row">
+					<div class="col-3 no-gutters d-block offset-1 align-self-center">
+						<img src="images/people/profDerrick.jpg" class="col-12">
+					</div>
+				
+					<div class="col-5 d-block offset-2">
+						<h3 class="text-center" style="font-family: 'Carrois Gothic'; color:darkred;">Derick Ostrenko</h3>
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">LSU
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">dostrenko@lsu.edu
+						225-578-5411
+						Faculty Page
+						</p>
+						</p>
+					</div>
+				</div>
+			</div>	
+	</div> <!--End Individual row-->
+		
+	</div>
+			
+									<!-- grey divider -->
+		  <div class="row">
+				<div class="col-12 noPad">
+					<div class="grayBox"></div>
+				</div>
+			</div>
+			
+	<div class="whiteBox row" style="padding-bottom: 5px;">
+		
+		
+		<div class="col-12 textpadding row noPad no-gutters">
+		  <h1 class="bigtext text-center redblock bigtextwhite col-12 noPad" id="AboutEvents">Big Data + Deep Learning</h1>
+	  </div>	
+
+			 <div class="row">
+				<div class = "col-10 offset-1 ">
+		        	<p class="smallertext text-justify">
+		        		The goal of this S&CC planning proposal is to build a partnership between various Baton Rouge community stakeholders and a multidisciplinary team of academic researchers in order to develop research concepts that will promote and employ S&CC technologies to tackle the major factors affecting the economic progress of the region, by considering economic and social issues in a holistic manner.
+		        	</p>
+		        </div>
+		      </div>
+		
+	<div class="row col-12 no-gutters" style="padding-bottom: 35px;"> <!-- Row -->
+			<div class="col-6 d-block">
+				<div class="row">
+					<div class="col-3 no-gutters d-block offset-1 align-self-center">
+						<img src="images/people/profDerrick.jpg" class="col-12">
+					</div>
+				
+					<div class="col-5 d-block offset-2">
+						<h3 class="text-center" style="font-family: 'Carrois Gothic'; color:darkred;">Derick Ostrenko</h3>
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">LSU
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">dostrenko@lsu.edu
+						225-578-5411
+						Faculty Page
+						</p>
+						</p>
+					</div>
+				</div>
+			</div>	
+			<div class="col-6 d-block">
+				<div class="row">
+					<div class="col-3 no-gutters d-block offset-1 align-self-center">
+						<img src="images/people/profDerrick.jpg" class="col-12">
+					</div>
+				
+				  <div class="col-5 d-block offset-2">
+						<h3 class="text-center" style="font-family: 'Carrois Gothic'; color:darkred;">Derick Ostrenko</h3>
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">LSU
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">dostrenko@lsu.edu
+						225-578-5411
+						Faculty Page
+						</p>
+						</p>
+				  </div>
+				</div>
+			</div>	
+	</div> <!--End Individual row-->
+	<div class="row col-12 no-gutters" style="padding-bottom: 35px;"> <!-- Row -->
+			<div class="col-6 d-block">
+				<div class="row">
+					<div class="col-3 no-gutters d-block offset-1 align-self-center">
+						<img src="images/people/profDerrick.jpg" class="col-12">
+					</div>
+				
+					<div class="col-5 d-block offset-2">
+						<h3 class="text-center" style="font-family: 'Carrois Gothic'; color:darkred;">Derick Ostrenko</h3>
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">LSU
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">dostrenko@lsu.edu
+						225-578-5411
+						Faculty Page
+						</p>
+						</p>
+					</div>
+				</div>
+			</div>	
+			<div class="col-6 d-block">
+				<div class="row">
+					<div class="col-3 no-gutters d-block offset-1 align-self-center">
+						<img src="images/people/profDerrick.jpg" class="col-12">
+					</div>
+				
+					<div class="col-5 d-block offset-2">
+						<h3 class="text-center" style="font-family: 'Carrois Gothic'; color:darkred;">Derick Ostrenko</h3>
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">LSU
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">dostrenko@lsu.edu
+						225-578-5411
+						Faculty Page
+						</p>
+						</p>
+					</div>
+				</div>
+			</div>	
+	</div> <!--End Individual row-->
+		
+	</div>
+
+									<!-- grey divider -->
+		  <div class="row">
+				<div class="col-12 noPad">
+					<div class="grayBox"></div>
+				</div>
+			</div>
+			
+	<div class="whiteBox row" style="padding-bottom: 5px;">
+		
+		
+		<div class="col-12 textpadding row noPad no-gutters">
+		  <h1 class="bigtext text-center redblock bigtextwhite col-12 noPad" id="AboutEvents">Social Science</h1>
+	  </div>	
+
+			 <div class="row">
+				<div class = "col-10 offset-1 ">
+		        	<p class="smallertext text-justify">
+		        		The goal of this S&CC planning proposal is to build a partnership between various Baton Rouge community stakeholders and a multidisciplinary team of academic researchers in order to develop research concepts that will promote and employ S&CC technologies to tackle the major factors affecting the economic progress of the region, by considering economic and social issues in a holistic manner.
+		        	</p>
+		        </div>
+		      </div>
+		
+	<div class="row col-12 no-gutters" style="padding-bottom: 35px;"> <!-- Row -->
+			<div class="col-6 d-block">
+				<div class="row">
+					<div class="col-3 no-gutters d-block offset-1 align-self-center">
+						<img src="images/people/profDerrick.jpg" class="col-12">
+					</div>
+				
+					<div class="col-5 d-block offset-2">
+						<h3 class="text-center" style="font-family: 'Carrois Gothic'; color:darkred;">Derick Ostrenko</h3>
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">LSU
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">dostrenko@lsu.edu
+						225-578-5411
+						Faculty Page
+						</p>
+						</p>
+					</div>
+				</div>
+			</div>	
+			<div class="col-6 d-block">
+				<div class="row">
+					<div class="col-3 no-gutters d-block offset-1 align-self-center">
+						<img src="images/people/profDerrick.jpg" class="col-12">
+					</div>
+				
+				  <div class="col-5 d-block offset-2">
+						<h3 class="text-center" style="font-family: 'Carrois Gothic'; color:darkred;">Derick Ostrenko</h3>
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">LSU
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">dostrenko@lsu.edu
+						225-578-5411
+						Faculty Page
+						</p>
+						</p>
+				  </div>
+				</div>
+			</div>	
+	</div> <!--End Individual row-->
+	<div class="row col-12 no-gutters" style="padding-bottom: 35px;"> <!-- Row -->
+			<div class="col-6 d-block">
+				<div class="row">
+					<div class="col-3 no-gutters d-block offset-1 align-self-center">
+						<img src="images/people/profDerrick.jpg" class="col-12">
+					</div>
+				
+					<div class="col-5 d-block offset-2">
+						<h3 class="text-center" style="font-family: 'Carrois Gothic'; color:darkred;">Derick Ostrenko</h3>
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">LSU
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">dostrenko@lsu.edu
+						225-578-5411
+						Faculty Page
+						</p>
+						</p>
+					</div>
+				</div>
+			</div>	
+			<div class="col-6 d-block">
+				<div class="row">
+					<div class="col-3 no-gutters d-block offset-1 align-self-center">
+						<img src="images/people/profDerrick.jpg" class="col-12">
+					</div>
+				
+					<div class="col-5 d-block offset-2">
+						<h3 class="text-center" style="font-family: 'Carrois Gothic'; color:darkred;">Derick Ostrenko</h3>
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">LSU
+						<p class="text-center" style="font-family: 'Carrois Gothic'; color:#808080;">dostrenko@lsu.edu
+						225-578-5411
+						Faculty Page
+						</p>
+						</p>
+					</div>
+				</div>
+			</div>	
+	</div> <!--End Individual row-->
+		
+	</div>
+
+
+			<!-- grey divider -->
+			<div class="row">
+				<div class="col-12 noPad">
+					<div class="grayBox"></div>
+				</div>
+		  </div>
+		  <div class="row whiteBox">
+			  <div class="col-12 noPad">
+				<div class="row">
+					<div class="col-12 no-gutters noPad">
+					   <h1 class="bigtext text-center redblock bigtextwhite" id="AboutContact">Contact Us</h1>
+					</div>
+			    </div>
+				<div class="row">
+					<div class="col-12" style="padding-bottom: 5px;">
+		<div class="col-10 offset-1">
+			<div class="row">
+				<div class = "col-10 offset-1 ">
+		        	<p class="smallertext text-justify">
+		        	To login to our data submission section, please visit this link to our planeario server!
+		        	</p>
+		        </div>							 
+		    </div>
+			<div class="row">
+				<button class="formspree_button col-4 offset-4 button-style" href="http://icar.lsu.edu:5000/" role="button">Plenario</button>	
+			</div>
+						
+ 		</div>
+					</div>
+				</div>					
+			  </div>	
+			
+			</div>
+			
+									<!-- grey divider -->
+		  <div class="row">
+				<div class="col-12 noPad">
+					<div class="grayBox"></div>
+				</div>
+			</div>
+			
+			
+				<div class="row" style="padding-top: 10px; background-color: #FFFFFF;">
+				  		<div class="col-4 offset-4 col-lg-2 offset-lg-5 d-lg-block">	
+						  	<img src="images/logos/LSU_logo.png" class="img-fluid" alt="The Louisiana State University Logo."></div> 
+						<div class="row col-12">
+	  				<a class="smallertext align-self-center col-md-6 offset-md-3 textpadding text-center" href="https://www.lsu.edu/accessibility/" style="padding-top: 2px; padding-bottom: 2px;">Accessibility Statement</a>
+					</div>
+	  			</div>
+			
+    </div>
+
+
+<!-- grey divider -->
+	
+</div>
+			
+
+			
+			
+		</div>
+
+		
+		
+		<!-- scripts -->
+		<!-- popper.js -->
+	<script src="https://unpkg.com/popper.js/dist/umd/popper.min.js"></script>
+		<!-- jquery -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<!-- bootstrap -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+	</body>
+</html>

@@ -1,0 +1,241 @@
+/*if you need to make any style changes do it here 
+  this code should override the base bootstrap stuff*/
+
+/*I tried not to write much css to style the webpage, 
+  instead my css is there to add in some functionality */
+/*custom background color*/
+body {background-color: #F3F3F3;}
+
+
+/*this code here enables hover functionality for dropdown menus */
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+#dropdownMenuLink{
+}
+
+.row {
+	margin-left: 0;
+	margin-right: 0;
+	
+}
+
+/*
+.example {
+  background-color: #943A3B;
+}
+*/
+
+.noPad {
+  padding: 0 ! important;
+}
+
+.grayBox {
+  width: 100%;
+  height: 70px;
+}
+
+.redBox {
+	background-color: #993434;
+}
+
+/* uncomment this out for troubleshooting help
+* {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+*/
+
+
+/* Jack's Custom CSS*/
+/*collapsed/mobile Burger styling*/
+
+.whiteBox {
+	background-color: #FFFFFF;
+	box-shadow: 0px 1px 10px 1px rgba( 0, 0, 0, 0.15);
+}
+
+.redblock{
+	background-color: #993434;
+}
+
+.burger-cust {
+	background: -webkit-gradient(linear, center top, center bottom, from(#993434), color-stop(100%, #751616));
+	border-radius: 0;
+}
+
+.Headerbutton-cust {
+		background: white;
+		color:#7F7F7F;
+		border-radius: 0;
+		font-size: 22px;
+		font-family: "Bebas Kai";
+		display: block;
+  		padding: 0.5rem 1rem;
+		
+}
+
+.Headerbutton-cust:hover {
+		text-decoration: none;
+		background: -webkit-gradient(linear, center top, center bottom, from(#993434), color-stop(100%, #751616));
+		color: white;
+}
+
+.Headerbutton-cust:active {
+		background: #7F7F7F;
+		color: white;
+}
+
+.bigtext {
+	font-size:42px;
+	font-family: "Bebas Kai";
+ 	color: #7F7F7F;
+}
+.bigtextwhite{
+	color:white;
+}
+.smallertext {
+	font-size:18px;
+	font-family: "Carrois Gothic";
+ 	color: #7F7F7F;
+}
+
+.formspree_input {
+	color: #7F7F7F;
+	border-width: 1px;
+	min-height: 42px;
+	font-family: "Carrois Gothic";
+	background-color: #FFFFFF;
+	font-size: 19px;
+	border-color: #993434;
+	border-style: solid;
+	border-radius: 3px;
+	line-height: 37px;
+	padding-left: 1%;
+}
+
+.pagebutton {
+	color: #7F7F7F;
+	border-width: 1px;
+	min-height: 42px;
+	font-family: "Carrois Gothic";
+	z-index: 66;
+	background-color: #FFFFFF;
+	font-size: 19px;
+	border-color: #993434;
+	border-style: solid;
+	border-radius: 3px;
+	font-weight: 400;
+	line-height: 37px;
+	font-color: #993434;
+
+}
+.pagebutton:hover {
+	background: -webkit-gradient(linear, center top, center bottom, from(#993434), color-stop(100%, #751616));
+	background: -webkit-linear-gradient(top, #993434, #751616 100%);
+	background: linear-gradient(to bottom, #993434, #751616 100%);
+
+	color: white;
+}
+.pagebutton.ButtonSelected {
+	background: -webkit-gradient(linear, center top, center bottom, from(#993434), color-stop(100%, #751616));
+	background: -webkit-linear-gradient(top, #993434, #751616 100%);
+	background: linear-gradient(to bottom, #993434, #751616 100%);
+
+	color: white;
+
+}.dropdownButton {
+		background: linear-gradient(to bottom, #7F7F7F, #707070 100%);
+		color: white;
+		font-size: 22px;
+		font-family: "Bebas Kai";
+		
+}
+.dropdownButton:hover {
+		background: -webkit-gradient(linear, center top, center bottom, from(#993434), color-stop(100%, #751616));
+		color: white;
+}
+.dropdownButton:active {
+		background: -webkit-gradient(linear, center top, center bottom, from(#993434), color-stop(100%, #751616));
+		color: white;
+}
+
+.bannerImg{
+		background: url(../../images/misc/downtownBR.jpg);
+		height: 50vh;
+	    /* Center and scale the image nicely */
+		background-position: center;
+		background-size: cover;
+	    background-repeat: no-repeat;
+	
+}
+.crimebannerImg{
+	background: url(../../images/vis/crimeMapRed.jpg);
+}
+.trafficbannerImg{
+	background: url(../../images/vis/carsWithNames.png);
+}
+.posterbannerImg{
+	background: url(../../images/vis/PosterCrop.png)
+}
+
+.dropdown-custom{
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: auto;
+  z-index: 1000;
+  display: none;
+  float: right;
+	
+}
+
+.button-style{
+	color: #7F7F7F;
+	border-width: 1px;
+	font-family: "Carrois Gothic";
+	z-index: 66;
+	background-color: #FFFFFF;
+	font-size: 19px;
+	border-color: #993434;
+	border-style: solid;
+	border-radius: 3px;
+	font-color: #993434;
+}
+
+
+
+/*  Dropdown Items-text Cust */ 
+.dropdown-item_cust {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color:#7F7F7F;
+  background: white;
+  border: 0;
+  font-size: 18px;
+  font-family: "Bebas Kai"
+}
+.dropdown-item_cust:link {
+	color: #7F7F7F;
+	
+}
+
+.dropdown-item_cust:hover, .dropdown-item_cust:focus {
+  color: white;
+  text-decoration: none;
+	background: -webkit-gradient(linear, center top, center bottom, from(#7F7F7F), color-stop(100%, #545454)); 
+}
+
+.dropdown-item_cust.active, .dropdown-item_cust:active {
+  color: white;
+  text-decoration: none;
+  background-color: linear-gradient(#7F7F7F, #545454);
+}
+
+
+/* Dropdown item cust end */
