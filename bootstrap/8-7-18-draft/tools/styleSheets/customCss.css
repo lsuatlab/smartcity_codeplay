@@ -181,8 +181,8 @@ body {background-color: #F3F3F3;}
 	
 }
 .crimebannerImg{
-	background: url(../../images/vis/crimeMapRed.jpg);
-			height: 60vh;
+		background: url(../../images/vis/crimeMapRed.jpg);
+		height: 60vh;
 	    /* Center and scale the image nicely */
 		background-position: center;
 		background-size: cover;
