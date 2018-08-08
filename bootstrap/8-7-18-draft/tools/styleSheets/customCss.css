@@ -211,23 +211,7 @@ body {background-color: #F3F3F3;}
 }
 */
 
-/*Styling for MOBILE dropdown menu: the large page buttons (about us, etc)*/
-.dropdownButton {
-		background: linear-gradient(to bottom, #7F7F7F, #707070 100%);
-		color: white;
-		font-size: 22px;
-		font-family: BebasKai;
-		
-}
-.dropdownButton:hover {
-		background: -webkit-gradient(linear, center top, center bottom, from(#993434), color-stop(100%, #751616));
-		color: white;
-		text-decoration: none;
-}
-.dropdownButton:active {
-		background: -webkit-gradient(linear, center top, center bottom, from(#993434), color-stop(100%, #751616));
-		color: white;
-}
+
 
 
 
@@ -295,7 +279,7 @@ body {background-color: #F3F3F3;}
   background: linear-gradient(#7F7F7F, #545454);
 }
 
-/*For the header buttons to Different pages in the  (About us, etc) navbar AND the MOBILE section buttons - e.g. Events, contact us*/
+/*For the header buttons to Different pages in the  (About us, etc) navbar*/
 .Headerbutton-cust {
 		background: #EAEAEA;
 		color:#7F7F7F;
@@ -317,7 +301,45 @@ body {background-color: #F3F3F3;}
 		color: white;
 }
 
+/*Styling for MOBILE dropdown menu: the large page buttons (about us, etc)*/
+.dropdownButton {
+		background: linear-gradient(to bottom, #7F7F7F, #707070 100%);
+		color: white;
+		font-size: 16px;
+		font-family: BebasKai;
+		
+}
+.dropdownButton:hover {
+		background: -webkit-gradient(linear, center top, center bottom, from(#993434), color-stop(100%, #751616));
+		color: white;
+		text-decoration: none;
+}
+.dropdownButton:active {
+		background: -webkit-gradient(linear, center top, center bottom, from(#993434), color-stop(100%, #751616));
+		color: white;
+}
 
+/*For the subsections on the MOBILE dropdown menu*/
+.dropdownButtonsub {
+		background: #EAEAEA;
+		color:#7F7F7F;
+		border-radius: 0;
+		font-size: 16px;
+		font-family: BebasKai;
+		display: block;
+		padding: 0.45rem;
+}
+
+.dropdownButtonsub:hover {
+		text-decoration: none;
+		background: -webkit-gradient(linear, center top, center bottom, from(#993434), color-stop(100%, #751616));
+		color: white;
+}
+
+.dropdownButtonsub:active {
+		background: #7F7F7F;
+		color: white;
+}
 
 /*CSS to make the top navbar stick*/
 .sticky {
@@ -351,5 +373,11 @@ body {background-color: #F3F3F3;}
 	font-family: CarroisGothic;
  	color: #7F7F7F;
 	line-height: 1.5;	
+	}
+	
+	.bigtext {
+	font-size:32px;
+	font-family: BebasKai;
+	padding-top: 0.4rem;
 	}
 }
