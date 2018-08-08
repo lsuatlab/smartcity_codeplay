@@ -15,6 +15,16 @@ body {background-color: #F3F3F3;}
 #dropdownMenuLink{
 }
 
+@font-face {
+	font-family: BebasKai;
+	src:url(../fonts/bebaskai-webfont.woff);
+}
+
+@font-face{
+	font-family: CarroisGothic;
+	src: url(../fonts/carroisgothic-regular-webfont.woff);
+}
+
 .row {
 	margin-left: 0;
 	margin-right: 0;
@@ -79,7 +89,7 @@ body {background-color: #F3F3F3;}
 		color:#7F7F7F;
 		border-radius: 0;
 		font-size: 22px;
-		font-family: "Bebas Kai";
+		font-family: BebasKai;
 		display: block;
 		padding: 1.0rem;
 }
@@ -97,7 +107,7 @@ body {background-color: #F3F3F3;}
 
 .bigtext {
 	font-size:42px;
-	font-family: "Bebas Kai";
+	font-family: BebasKai;
  	color: #7F7F7F;
 }
 .bigtextwhite{
@@ -105,7 +115,7 @@ body {background-color: #F3F3F3;}
 }
 .smallertext {
 	font-size:19px;
-	font-family: "Carrois Gothic";
+	font-family: CarroisGothic;
  	color: #7F7F7F;
 }
 
@@ -113,7 +123,7 @@ body {background-color: #F3F3F3;}
 	color: #7F7F7F;
 	border-width: 1px;
 	min-height: 42px;
-	font-family: "Carrois Gothic";
+	font-family: CarroisGothic;
 	background-color: #FFFFFF;
 	font-size: 19px;
 	border-color: #993434;
@@ -126,7 +136,7 @@ body {background-color: #F3F3F3;}
 .pagebutton {
 	color: #7F7F7F;
 	border-width: 1px;
-	font-family: "Carrois Gothic";
+	font-family: CarroisGothic;
 	z-index: 66;
 	background-color: #FFFFFF;
 	font-size: 19px;
@@ -158,7 +168,7 @@ body {background-color: #F3F3F3;}
 		background: linear-gradient(to bottom, #7F7F7F, #707070 100%);
 		color: white;
 		font-size: 22px;
-		font-family: "Bebas Kai";
+		font-family: BebasKai;
 		
 }
 .dropdownButton:hover {
@@ -237,7 +247,7 @@ body {background-color: #F3F3F3;}
 .button-style{
 	color: #7F7F7F;
 	border-width: 1px;
-	font-family: "Carrois Gothic";
+	font-family: CarroisGothic;
 	z-index: 66;
 	background-color: #FFFFFF;
 	font-size: 19px;
@@ -259,7 +269,7 @@ body {background-color: #F3F3F3;}
   background: white;
   border: 0;
   font-size: 22px;
-  font-family: "Bebas Kai";
+  font-family: BebasKai;
 	text-align: center;
 	padding: 0.5rem;
 	
