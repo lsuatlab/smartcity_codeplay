@@ -3,7 +3,7 @@
 <head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Smart City</title>
+		<title>Smart City - Our City</title>
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<!--CSS stuff here -->
@@ -250,11 +250,10 @@
 					</div>	
 					<div class="row col-12">
                         <div class="row col-12 col-lg-4" style="padding-bottom: 25px;">
-						  <a class=" pagebutton col-8 offset-2 col-md-6 offset-md-3" href="https://lsuatlab.github.io/smartcity_codeplay/Safety%20Map/index.html" role="button" style="">Safety Map</a>
-					  </div>
+					  <a class=" pagebutton col-8 offset-2 col-md-6 offset-md-3" href="https://lsuatlab.github.io/smartcity_codeplay/Safety%20Map/index.html" role="button" style="" target="_blank">Safety Map</a></div>
 						
                         <div class="row col-12 col-lg-4" style="padding-bottom: 25px;">
-						  <a class="pagebutton col-8 offset-2 col-md-6 offset-md-3" href="https://lsuatlab.github.io/smartcity_codeplay/Bar%20graph%20on%20map%20-%20gitpages%20edition/index.html" role="button" style="">3d Map</a>
+						  <a class="pagebutton col-8 offset-2 col-md-6 offset-md-3" href="https://lsuatlab.github.io/smartcity_codeplay/Bar%20graph%20on%20map%20-%20gitpages%20edition/index.html" role="button" style="" target="_blank">3d Map</a>
 					  </div>
 						
                         <div class="row col-12 col-lg-4" style="padding-bottom: 25px;">
@@ -287,14 +286,12 @@
 					</div>
 					<div class="row">
 						<div class="col-10 offset-1" style="padding-top: 25px; padding-bottom: 25px; padding-left: 0; padding-right: 0;" >
-							<p class="smallertext">
-		        		This project aims to develop a real time video streaming monitoring service, and the developmental prototype built with Deep Learning techniques is shown below using the data from a Baton Rouge traffic camera from DOTD.
-		        	</p>
+						  <p class="smallertext"> This project aims to develop a real time video streaming monitoring service, and the developmental prototype built with Deep Learning techniques is shown using the data from a Baton Rouge traffic camera from DOTD. </p>
 						</div>
 					</div>
 					
 					<div class="row">
-						<a class="col-4 offset-4 col-md-2 offset-md-5 pagebutton" href="https://drive.google.com/file/d/1pol69gDbpbfncaAm9FdyIFRTndqtv7vI/view?usp=sharing" role="button">View</a>	
+						<a class="col-4 offset-4 col-md-2 offset-md-5 pagebutton" href="https://drive.google.com/file/d/1pol69gDbpbfncaAm9FdyIFRTndqtv7vI/view?usp=sharing" role="button" target="_blank">View</a>	
 					</div>
 				</div>
 
@@ -335,7 +332,7 @@ community well-being.
 						</div>
 					</div>
 					<div class="row">
-						<a class="col-4 offset-4 col-md-2 offset-md-5 pagebutton" href="https://drive.google.com/file/d/1dSNIf2gT0iYcyrCz7uRHYa2pf67GyEqk/view?ts=5b60a947" role="button">View</a>	
+						<a class="col-4 offset-4 col-md-2 offset-md-5 pagebutton" href="https://drive.google.com/file/d/1dSNIf2gT0iYcyrCz7uRHYa2pf67GyEqk/view?ts=5b60a947" role="button" target="_blank">View</a>	
 					</div>
 				</div>
 
@@ -350,6 +347,7 @@ community well-being.
 			</div>
 			
 			
+<!--Footer-->
 				<div class="row" style="padding-top: 10px; background-color: #FFFFFF;">
 				  		<div class="col-4 offset-2 col-md-2 offset-md-4 d-lg-block">	
 						  	<img src="images/logos/LSU_logo.png" class="img-fluid" alt="The Louisiana State University Logo.">
@@ -359,14 +357,10 @@ community well-being.
 						</div> 
 					
 						<div class="row col-12">
-	  				<a class="smallertext align-self-center col-md-6 offset-md-3 textpadding text-center" href="https://www.lsu.edu/accessibility/" style="padding-top: 15px; padding-bottom: 15px;">Accessibility Statement</a>
+	  				<a class="smallertext align-self-center col-md-6 offset-md-3 textpadding text-center" href="https://www.lsu.edu/accessibility/" style="padding-top: 15px; padding-bottom: 15px; font-size: 15px;" target="_blank">Accessibility Statement</a>
 					</div>
 	  			</div>
-			
-			
-
-			
-			
+<!--End Footer-->
 		</div>
 
 		
@@ -378,5 +372,20 @@ community well-being.
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<!-- bootstrap -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+		
+				<script>window.onscroll = function() {myFunction()};
+
+		var navbar = document.getElementById("navbar");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+		    navbar.classList.add("sticky")
+		  } else {
+		    navbar.classList.remove("sticky");
+		  }
+		}
+		</script>
+		
 	</body>
 </html>
