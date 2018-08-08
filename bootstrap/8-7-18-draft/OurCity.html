@@ -14,10 +14,10 @@
 
 	</head>
 	<body>
-		<div class="container-fluid noPad">
+<div class="container-fluid noPad">
 <!--			Navbar-->
 			<div class="row sticky" style="z-index: 100; background-color: #EAEAEA;">
-				<div class="col-12 noPad">
+			  <div class="col-12 noPad">
 				  <nav class="navbar navbar-expand-md navbar-light noPad" style="padding-top: 0; padding-bottom: 0; height: 100%;">
 				  	<!-- big logo -->
 				    <a class="navbar-brand d-none d-sm-block col-3 noPad" href="index.html">
@@ -27,11 +27,10 @@
 				    <a class="navbar-brand d-block d-sm-none col-3 noPad" href="index.html">
 				      <img src="images/logos/logoWithText.png" class="navbar-brand mr-auto" height="71" href="index.html" alt="Red minimalist cityscape with text Smart Safe Connected Baton Rouge following. Serves as logo of site">
 				    </a>
-
+					<!--Mobile navbar burger button-->
 					<button class="navbar-toggler burger-cust col-2" type="button" data-toggle="collapse" data-target="#NavBurger" aria-controls="NavBurger" aria-expanded="false" aria-label="Toggle navigation bar" style="height: 100%;">
-
-         			 <span class="navbar-toggler-icon"></span>
-         			 </button>
+         				<span class="navbar-toggler-icon"></span>
+         			</button>
 					  
 				    <div class="d-none d-lg-block collapse navbar-collapse col-9 row" id="navbarNavAltMarkup" style="height: 100%; padding:0;">
 				      <div class=" navbar-nav ml-auto col-8" style="height: 100%;">
@@ -103,8 +102,8 @@
 							</a>
 				            <a class="dropdown-item_cust" href="Research.html#RsSub">
 								Data Submission
-							<!-- add this line in for the active element for text-only broswers -->
-				            <span class="sr-only">(current)</span>							
+								<!-- add this line in for the active element for text-only broswers -->
+				            	<span class="sr-only">(current)</span>							
 							</a>
 				          </div>
 				        </div>
@@ -112,8 +111,9 @@
 				    </div>
 				  </nav>
 					
+<!--					Holder for burger dropdown-->
 				<div class="row col-8 offset-4 noPad no-gutters collapse dropdown-custom" style="background-color: grey;" id="NavBurger" aria-expanded="false"  aria-labelledby="">
-  <!-- Link Section -->
+  				<!-- Link Section -->
                   
                   <a class="nav-link example text-center col-12 dropdownButton" href="index.html#AboutBanner">
                     About Us
@@ -184,22 +184,20 @@
                     <!-- add this line in for the active element for text-only broswers -->
                     <span class="sr-only">(current)</span>
                   </a>
-                  
-              </div>
+                </div>
 <!--					here-->
 			  </div>
 			</div>
-<!--			End Navbar-->
+<!--		End Navbar-->
 
-			<!-- this here makes the big eye-grabbin' image -->
+			<!-- Banner -->
 			<div class="row" id="CityBanner">
 				<div class="col-12 noPad ourcitybannerImg" title="The cityscape in Baton Rouge.">
 				</div>
 			</div>
 
-			<!-- pic with words to the right -->
-		  <div class="row whiteBox">
-
+			<!-- BannerDescription -->
+			<div class="row whiteBox">
 				<div class="col-10 offset-1 noPad">
 					<div class="row">
 						<div class="col-12">
@@ -209,30 +207,27 @@
 
 					<div class="row" style="padding-top: 25px; padding-bottom: 25px;">
 						<div class = "col-12 noPad ">
-		        	<p class="smallertext text-justify">
+		        			<p class="smallertext text-justify">
 		        		The goal of this SS&C planning proposal is to build a partnership between various Baton Rouge community stakeholders and a multidisciplinary team of academic researchers in order to develop research concepts that will promote and employ SS&C technologies to tackle the major factors affecting the economic progress of the region, by considering economic and social issues in a holistic manner.
 		        	</p>
-		        </div>
-		      </div>
+		        		</div>
+		      		</div>
 				</div>
 			</div>
 			
-									<!-- grey divider -->
+			<!-- grey divider -->
 			<div class="row">
 				<div class="col-12 noPad">
 					<div class="grayBox"></div>
 				</div>
 			</div>
-			
-
-
 			<!-- Visualization -->
 			<a class="anchorpoint" id="CityMap"></a>
 			<div class="row whiteBox">
 				<div class="col-12 d-lg-block noPad" >
 					<div class="row col-12 noPad">
 						<div class="col-12 noPad">
-							<div class= "redblock" >
+							<div class= "redBox" >
 								<h1 class="bigtext bigtextwhite text-center noMargin">Crime Map Visualizations</h1>
 							</div>
 						</div>
@@ -245,27 +240,31 @@
 						<div class="col-10 offset-1" style="padding-top: 25px; padding-bottom: 25px; padding-left: 0; padding-right: 0;" >
 							<p class="smallertext">
 		        		This visualization was created by Jacob Shelton, an undergraduate REU student from Washington State University. Created from three years of crime data hosted on Open Data BR, this visualization aggregates the data into a crime index based on whether or not the crime was committed and the type of crime attempted. Next, Baton Rouge is divided up based on police district location data from EBRGIS Open Data and the crime index is used to color the police district. This visualization is not meant to convene any conclusive findings as the data from Open Data BR is meant only to give a snapshot of criminal activity of any given district. Instead this visualization serves as an example for one visualization style offered by the Smart City team.
-		        	</p>
+		        			</p>
 						</div>
 					</div>	
 					<div class="row col-12">
                         <div class="row col-12 col-lg-4" style="padding-bottom: 25px;">
-					  <a class=" pagebutton col-8 offset-2 col-md-6 offset-md-3" href="https://lsuatlab.github.io/smartcity_codeplay/Safety%20Map/index.html" role="button" style="" target="_blank">Safety Map</a></div>
+							<a class=" pagebutton col-8 offset-2 col-md-6 offset-md-3" href="https://lsuatlab.github.io/smartcity_codeplay/Safety%20Map/index.html" role="button" style="" target="_blank">Safety Map
+							</a>
+						</div>
 						
                         <div class="row col-12 col-lg-4" style="padding-bottom: 25px;">
-						  <a class="pagebutton col-8 offset-2 col-md-6 offset-md-3" href="https://lsuatlab.github.io/smartcity_codeplay/Bar%20graph%20on%20map%20-%20gitpages%20edition/index.html" role="button" style="" target="_blank">3d Map</a>
-					  </div>
+							<a class="pagebutton col-8 offset-2 col-md-6 offset-md-3" href="https://lsuatlab.github.io/smartcity_codeplay/Bar%20graph%20on%20map%20-%20gitpages%20edition/index.html" role="button" style="" target="_blank">3d Map
+							</a>
+						</div>
 						
                         <div class="row col-12 col-lg-4" style="padding-bottom: 25px;">
-						  <a class="pagebutton col-8 offset-2 col-md-6 offset-md-3" href="https://lsuatlab.github.io/smartcity_codeplay/Spheres%20-%20hover/index.html" role="button">Sphere</a>
-					  </div>
+							<a class="pagebutton col-8 offset-2 col-md-6 offset-md-3" href="https://lsuatlab.github.io/smartcity_codeplay/Spheres%20-%20hover/index.html" role="button">Sphere
+							</a>
+						</div>
 						
 					</div>
 				</div>
 
-		  </div>
+			</div>
 			
-						<!-- grey divider -->
+			<!-- grey divider -->
 			<div class="row">
 				<div class="col-12 noPad">
 					<div class="grayBox"></div>
@@ -277,27 +276,26 @@
 				<div class="col-12 d-lg-block noPad" >
 					<div class="row">
 						<div class="col-12 noPad">
-							<div class= "redblock" >
+							<div class= "redBox" >
 								<h1 class="bigtext bigtextwhite text-center noMargin">Traffic Visualization</h1>
 							</div>
 						</div>
 					</div>
-					<div class="row">	<div class="col-12 noPad trafficbannerImg" title="A screenshot of traffic with deep-learning AI identifying different types of vehicles." style=" box-shadow: 0px 1px 10px 1px rgba( 0, 0, 0, 0.25);"></div>
+					<div class="row">	
+						<div class="col-12 noPad trafficbannerImg" title="A screenshot of traffic with deep-learning AI identifying different types of vehicles." style=" box-shadow: 0px 1px 10px 1px rgba( 0, 0, 0, 0.25);"></div>
 					</div>
 					<div class="row">
 						<div class="col-10 offset-1" style="padding-top: 25px; padding-bottom: 25px; padding-left: 0; padding-right: 0;" >
 						  <p class="smallertext"> This project aims to develop a real time video streaming monitoring service, and the developmental prototype built with Deep Learning techniques is shown using the data from a Baton Rouge traffic camera from DOTD. </p>
 						</div>
 					</div>
-					
 					<div class="row">
 						<a class="col-4 offset-4 col-md-2 offset-md-5 pagebutton" href="https://drive.google.com/file/d/1pol69gDbpbfncaAm9FdyIFRTndqtv7vI/view?usp=sharing" role="button" target="_blank">View</a>	
 					</div>
 				</div>
-
-		  </div>
-			
-									<!-- grey divider -->
+		  	</div>
+	
+			<!-- grey divider -->
 			<div class="row">
 				<div class="col-12 noPad">
 					<div class="grayBox"></div>
@@ -309,25 +307,27 @@
 				<div class="col-12 d-lg-block noPad" >
 					<div class="row">
 						<div class="col-12 noPad">
-							<div class= "redblock" >
+							<div class= "redBox" >
 								<h1 class="bigtext bigtextwhite text-center noMargin">Community Wellbeing Map</h1>
 							</div>
 						</div>
 					</div>
-					<div class="row">	<div class="col-12 noPad posterbannerImg" title="A series of maps showing community stress. economic health, and environmental health."></div> </div>
+					<div class="row">	
+						<div class="col-12 noPad posterbannerImg" title="A series of maps showing community stress. economic health, and environmental health."></div> 
+					</div>
 					<div class="row">
 						<div class="col-10 offset-1" style="padding-top: 25px; padding-bottom: 25px; padding-left: 0; padding-right: 0;" >
 							<p class="smallertext">East Baton Rouge, Livingston, and Ascension parishes
-are continuing to grow as people migrate from the
-coast but have increasingly been impacted by weatherrelated
-events. After natural hazards affect communities,
-it is up to individuals, policymakers, and developers
-to make adaptive decisions for sustainable futures. In
-order to build adaptive capacity, there needs to be an
-understanding of what it means to build back “better” than
-before. The objective of this research is to develop an
-index to measure the variability of and capacity gaps in
-community well-being. 
+								are continuing to grow as people migrate from the
+								coast but have increasingly been impacted by weatherrelated
+								events. After natural hazards affect communities,
+								it is up to individuals, policymakers, and developers
+								to make adaptive decisions for sustainable futures. In
+								order to build adaptive capacity, there needs to be an
+								understanding of what it means to build back “better” than
+								before. The objective of this research is to develop an
+								index to measure the variability of and capacity gaps in
+								community well-being. 
 		        			</p>
 						</div>
 					</div>
@@ -336,17 +336,15 @@ community well-being.
 					</div>
 				</div>
 
-		  </div>
+		  	</div>
 			
-			
-												<!-- grey divider -->
+			<!-- grey divider -->
 			<div class="row">
 				<div class="col-12 noPad">
 					<div class="grayBox"></div>
 				</div>
 			</div>
-			
-			
+
 <!--Footer-->
 				<div class="row" style="padding-top: 10px; background-color: #FFFFFF;">
 				  		<div class="col-4 offset-2 col-md-2 offset-md-4 d-lg-block">	
@@ -357,8 +355,8 @@ community well-being.
 						</div> 
 					
 						<div class="row col-12">
-	  				<a class="smallertext align-self-center col-md-6 offset-md-3 textpadding text-center" href="https://www.lsu.edu/accessibility/" style="padding-top: 15px; padding-bottom: 15px; font-size: 15px;" target="_blank">Accessibility Statement</a>
-					</div>
+	  						<a class="smallertext align-self-center col-md-6 offset-md-3 textpadding text-center" href="https://www.lsu.edu/accessibility/" style="padding-top: 15px; padding-bottom: 15px; font-size: 15px;" target="_blank">Accessibility Statement</a>
+						</div>
 	  			</div>
 <!--End Footer-->
 		</div>
