@@ -92,14 +92,14 @@ body {background-color: #F3F3F3;}
 	font-size: 1.7rem;
 }
 
-/*UNUSED - didn't look as good but keeping incase
-Faculty description font- Same as smallertext, but it has a media query at the bottom to get smaller with breakpoints for layout stuff
+/*Faculty Description- a lil smaller then largertext, the mobile one is the same cus it looks better there*/
 .facultyDesc{
-	font-size:1.0rem;
+/*	1.1 rem old size*/
+	font-size: 18px;
 	font-family: CarroisGothic;
  	color: #808080;
 }
-*/
+
 
 
 /*stylings for the input sections on the formspree section*/
@@ -116,6 +116,14 @@ Faculty description font- Same as smallertext, but it has a media query at the b
 	line-height: 37px;
 	padding-left: 1%;
 }
+
+/*Current page highlight*/
+a.current {
+		text-decoration: none;
+		background: -webkit-gradient(linear, center top, center bottom, from(#993434), color-stop(100%, #751616));
+		color: white;
+}
+
 
 /*Styling for the buttons/link buttons in the body of the page*/
 .pagebutton {
@@ -403,11 +411,11 @@ Faculty description font- Same as smallertext, but it has a media query at the b
 	color:#993434; 
 	font-size: 1.5rem;
 	}
-/* Unusued, didn't look as good but keeping incase
+/* Unusued, didn't look as good but keeping incase*/
 	.facultyDesc{
-	font-size:0.9rem;
+	font-size:1.0rem;
 	font-family: CarroisGothic;
  	color: #808080;
 	}
-*/
+
 }
