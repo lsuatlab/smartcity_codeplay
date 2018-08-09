@@ -85,6 +85,23 @@ body {background-color: #F3F3F3;}
 	line-height: 1.6;
 }
 
+/*Faculty Text Names*/
+.facultyName{
+	font-family: CarroisGothic; 
+	color:darkred; 
+	font-size: 1.7rem;
+}
+
+/*UNUSED - didn't look as good but keeping incase
+Faculty description font- Same as smallertext, but it has a media query at the bottom to get smaller with breakpoints for layout stuff
+.facultyDesc{
+	font-size:1.0rem;
+	font-family: CarroisGothic;
+ 	color: #808080;
+}
+*/
+
+
 /*stylings for the input sections on the formspree section*/
 .formspree_input {
 	color: #7F7F7F;
@@ -380,4 +397,17 @@ body {background-color: #F3F3F3;}
 	font-family: BebasKai;
 	padding-top: 0.4rem;
 	}
+	
+	.facultyName{
+	font-family: CarroisGothic; 
+	color:#993434; 
+	font-size: 1.5rem;
+	}
+/* Unusued, didn't look as good but keeping incase
+	.facultyDesc{
+	font-size:0.9rem;
+	font-family: CarroisGothic;
+ 	color: #808080;
+	}
+*/
 }
