@@ -117,12 +117,12 @@ body {background-color: #F3F3F3;}
 	padding-left: 1%;
 }
 
-/*Current page highlight TEMP DISABLE need to specificy tag and make sure it doesnt highlight homepage*/
-/*a.current {
+/*Current page highlight */
+a.navLink.current{
 		text-decoration: none;
 		background: -webkit-gradient(linear, center top, center bottom, from(#993434), color-stop(100%, #751616));
 		color: white;
-} */
+} 
 
 
 /*Styling for the buttons/link buttons in the body of the page*/
